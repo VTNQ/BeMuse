@@ -44,7 +44,22 @@
     </div>
 </div>
 </ul>
+<div class="flex items-center justify-start pt-[13vh] px-0 ml-28">
+<a href="https://facebook.com" class="whitespace-nowrap text-white mr-[20px]">
+   <i class="fa-brands fa-facebook-f"></i>
+</a>
+<a href="https://twitter.com/" class="whitespace-nowrap text-white mr-[20px]">
+   <i class="fa-brands fa-twitter"></i>
+</a>
+<a href="https://dribbble.com/" class="whitespace-nowrap text-white mr-[20px]">
+   <i class="fa-brands fa-dribbble"></i>
+</a>
+<a href="https://www.pinterest.com/" class="whitespace-nowrap text-white mr-[20px]">
+   <i class="fa-brands fa-pinterest-p"></i>
+</a>
+</div>
 </nav>
+
 </div>
 </div>
 </template>
