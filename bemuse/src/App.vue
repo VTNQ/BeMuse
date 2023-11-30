@@ -6,7 +6,17 @@ import HelloWorld from './components/HelloWorld.vue'
 <template>
 <div class="h-[100vh] py-[45px] px-[100px]">
 
-</div>
+    <div class="wrapper">
+      <HelloWorld msg="You did it!" />
+
+      <nav>
+        <RouterLink to="/">Homiiii</RouterLink>
+        <RouterLink to="/about">About</RouterLink>
+      </nav>
+    </div>
+  </header>
+
+  <RouterView />
 </template>
 
 <style scoped>
