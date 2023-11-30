@@ -1,14 +1,21 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import navbar from './components/navbar.vue'
+
 </script>
 
 <template>
-<div class="h-[100vh] py-[45px] px-[100px] bg-black">
-
-</div>
+<navbar/>
 </template>
 
 <style scoped>
 
 </style>
+<script>
+export default {
+    name:'navbar',
+    components:{
+        navbar
+    },
+}
+</script>
