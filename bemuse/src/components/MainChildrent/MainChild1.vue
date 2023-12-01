@@ -1,8 +1,10 @@
 <template>
-    <div class="slider-container relative max-w-full overflow-hidden">
+    <div class="slider-container h-[100vh] relative max-w-full overflow-hidden">
       <div class="slider w-full flex transition-transform duration-500 ease-out" :style="{ transform: `translateX(-${slideIndex * 100}%)` }">
         <div class="slide w-full flex-shrink-0 items-center justify-center relative text-center" v-for="(slide, index) in slides" :key="index">
             <img :src="slide.img" class="h-full w-full object-cover z-[1] " alt="Museum Image">
+            <div class="overlay absolute inset-0 bg-black opacity-50 z-[2]"></div>
+
             <div class=" w-full content absolute top-[45%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 text-white">
           
           <h2 class="text-white font-normal text-[19px] mb-6 " style="font-family: 'Roboto Mono';letter-spacing:.36px" >{{ slide.title1 }}</h2>
@@ -17,7 +19,7 @@
         </div>
         </div>
       </div>
-      <button @click="prevSlide" class="font-bold absolute top-[45%] left-0 transform -translate-y-1/2  text-white py-44 px-8 rounded-full focus:outline-none z-30">
+      <button @click="prevSlide" class="font-bold absolute top-[45%] left-0 transform -translate-y-1/2  text-white py-44 px-12 rounded-full focus:outline-none z-30">
         <img src="/src/views/img/chevrons-left-regular-240.png" class="inline-block w-8" alt="">
         Prev</button>
     <button @click="nextSlide" class="font-bold absolute top-[45%] right-0 transform -translate-y-1/2  text-white py-100 px-8 rounded-full focus:outline-none z-30">
@@ -28,8 +30,18 @@
     </div>
   </template>
   <style scoped>
-.slider {
+    .slider {
   transition: transform 1000ms ease-out;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black; /* Màu của lớp phủ */
+  opacity: 0.3; /* Điều chỉnh độ trong suốt của lớp phủ */
+  z-index: 2; /* Đảm bảo lớp phủ nằm trên hình ảnh */
 }
 </style>
   

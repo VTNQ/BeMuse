@@ -1,32 +1,40 @@
 <script>
 import MainChild1 from './MainChildrent/MainChild1.vue'
-import MainChild2 from './MainChildrent/MainChild2.vue'
+import MainChild2 from './MainChildrent/MainChild2.vue';
+
 
 export default {
   components: {
-    MainChild1, // Đăng ký MainChild1 là một thành phần con
+    MainChild1,
     MainChild2,
-  },
+},
 }
 </script>
-<!-- <template>
-    <div>       
-        <MainChild1/>
-        <MainChild2/>
-    </div>
-    
-</template> -->
+
 <template>
-    <div class="main-container" >
-        <div>
-            <MainChild1/>
+    <div class="main-container bg-pink-400">
+        
+      <div>
+        <MainChild1/>      
+      </div>
+      <div class="relative  bg-slate-800  z-30">        
+            
+        <div class="absolute flex justify-center items-center min-h-screen w-full bg-slate-800 z-30">
+        <h1 class="text-white text-center">hello</h1>
+        <MainChild2/>
         </div>
-        <div class="top-[100%] max-h-[2500px] w-[100vw] bg-black">
-            <MainChild2/>
+    
         </div>
+      
     </div>
-</template>
-
-
-<style>
-</style>
+  </template>
+  
+  <style>
+  .main-container {
+    overflow-y: scroll;
+  }
+  .relative {
+    position: relative;
+  }
+  </style>
+  
