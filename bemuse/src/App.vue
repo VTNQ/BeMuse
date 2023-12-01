@@ -7,10 +7,14 @@ import Main from './components/Main.vue'
 
 
 
+
 <template>
-  <div class="flex h-[100vh]">
-    <navbar class="w-[28%]" /> <!-- Chỉnh sửa chiều rộng và màu sắc nếu cần -->
-    <Main class="w-[72%] bg-slate-300" /> <!-- Phần còn lại của màn hình cho Main -->
+  <div class="flex">
+    <!-- Navbar ở đây (nếu có chiều rộng cố định, hãy thêm vào) -->
+    <navbar class="fixed top-0 left-0 z-50" /> <!-- Giả sử navbar chiếm 30% chiều rộng -->
+    
+    <!-- Main chiếm 70% chiều rộng và đặt ở bên phải -->
+    <Main class="w-[70%] ml-auto " />
   </div>
 </template>
 
