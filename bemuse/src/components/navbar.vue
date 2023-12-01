@@ -1,6 +1,6 @@
 <template>
 
-<div class="h-[100vh] w-[30%] bg-black">
+<div class="h-[100vh] w-[30%] bg-black md:fixed md:left-0 md:justify-between responsive-big ">
 <div class="py-[60px] px-0  flex items-center ml-28 relative  justify-start ">
 <a href="">
     <img src="/src/views/img/museum.png" width="100" class="h-auto max-w-[100%] rounded-none" alt="">
