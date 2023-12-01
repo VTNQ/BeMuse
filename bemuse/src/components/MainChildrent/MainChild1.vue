@@ -2,20 +2,6 @@
     <div class="slider-container relative max-w-full overflow-hidden">
       <div class="slider w-full flex transition-transform duration-500 ease-out" :style="{ transform: `translateX(-${slideIndex * 100}%)` }">
         <div class="slide w-full flex-shrink-0 items-center justify-center relative text-center" v-for="(slide, index) in slides" :key="index">
-<<<<<<< HEAD
-          
-            <img :src="slide.img" class="h-full w-full object-cover z-[1]" alt="Museum Image">
-            <div class="absolute top-[30%] left-[50%] text-center" style="transform: translate(-50%, -50%);">
-                <p class="text-[16px]" style="font-family:'Roboto Mono'">{{ slide.description }}</p>
-                <h2 class="mt-[20px] mb-0 text-[50px] font-bold" style="color: rgba(var(--ca-white),.9);font-family: 'Crimson Text';letter-spacing: 0.64px;">{{ slide.title }}</h2>
-          <button>{{ slide.buttonText }}</button>
-            </div>
-            
-          <div class="content relative bg-transparent p-[2rem] items-center justify-center text-white" >
-           
-          </div>
-         
-=======
             <img :src="slide.img" class="h-full w-full object-cover z-[1] " alt="Museum Image">
             <div class=" w-full content absolute top-[45%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 text-white">
           
@@ -29,7 +15,6 @@
           </div>
           
         </div>
->>>>>>> cd447a8ae7fb440de6c0df726600b0eec513f818
         </div>
       </div>
       <button @click="prevSlide" class="font-bold absolute top-[45%] left-0 transform -translate-y-1/2  text-white py-44 px-8 rounded-full focus:outline-none z-30">
@@ -56,19 +41,12 @@ export default {
     return {
       slides: [
         {
-<<<<<<< HEAD
-          img: "/src/views/img/Pic-museum1.png",
-          title: "Bestselling Artists",
-          description: "Slide 1 Description",
-          buttonText: "Button 1"
-=======
           img: "/src/views/img/pic-museum3.jpg",
           title1: "Enjoy art space",
           title2: "Eclectic Collection",
           description: "Today the MooM has a leading collection of modern and contemporary art comprising works by international artists which reflects the energy, commitment and diversity of emerging artists.",
           buttonText1: "BUY TICKETS",
           buttonText2: "VISIT US",
->>>>>>> cd447a8ae7fb440de6c0df726600b0eec513f818
         },
         {
           img: "/src/views/img/pic-museum2.jpg",
