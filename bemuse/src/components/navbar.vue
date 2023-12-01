@@ -249,14 +249,49 @@ export default {
       isDropdownOpen1: false,
     };
   },
+  mounted(){
+     this.initializeMenu();
+    window.addEventListener('resize', this.handleResize);
+  },
   methods: {
+      initializeMenu() {
+     this.updateMenuTransform();
+  },
     showmenu(){
         const menu=document.querySelector('.menushow');
-       menu.style.transform = 'translateX(0)';
+       menu.style.transform = 'translateX(0vh)';
+    },
+     updateMenuTransform() {
+      const menu = document.querySelector('.menushow');
+      const screenWidth = window.innerWidth;
+
+      if (screenWidth <= 1199) {
+        menu.style.transform = 'translateX(-48vh)';
+      } else {
+        menu.style.transform = 'translateX(-1vh)';
+      }
+    },
+        handleResize() {
+      this.updateMenuTransform();
+    },
+       updateDropdownStyles(selector, isOpen) {
+      const dropdownBtn = document.querySelector(selector);
+
+      if (isOpen) {
+        // styles when dropdown is open
+      } else {
+        // Reset styles when dropdown is closed
+      }
     },
     closemenu(){
-        const menu=document.querySelector('.menushow');
-       menu.style.transform = 'translateX(-48vh)';
+        const menu = document.querySelector('.menushow');
+  const screenWidth = window.innerWidth;
+
+  if (screenWidth <= 1199) {
+    menu.style.transform = 'translateX(-48vh)';
+  } else {
+    menu.style.transform = 'translateX(-1vh)';
+  }
     },
     toggleDropdown1() {
       this.isDropdownOpen1 = !this.isDropdownOpen1;
@@ -370,6 +405,9 @@ export default {
   transition: all 0.3s ease;
   transition-delay: 0.2s;
   animation: fadeInDown 1s ease;
+}
+.menushow{
+  transform: translateX(-1vh);
 }
 .dropdown-btn {
   cursor: pointer;
@@ -596,7 +634,7 @@ export default {
     background-color: #fff;
     height: 100%;
     top: 0px;
-    transform: translatex(-48vh);
+   
 
   }
   .lg {
