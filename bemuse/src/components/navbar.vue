@@ -256,7 +256,7 @@ export default {
     },
     closemenu(){
         const menu=document.querySelector('.menushow');
-       menu.style.transform = 'translateX(-29vh)';
+       menu.style.transform = 'translateX(-48vh)';
     },
     toggleDropdown1() {
       this.isDropdownOpen1 = !this.isDropdownOpen1;
@@ -444,6 +444,7 @@ export default {
     display: inline-block;
     vertical-align: middle;
     left: 30px;
+    max-height: auto;
 }
     .hamburger-inner {
    width: 24px;
@@ -459,6 +460,7 @@ export default {
     transition-property: transform;
     transition-duration: 75ms;
     transition-timing-function: cubic-bezier(.55,.055,.675,.19)}
+    
 .hamburger-inner::before {
     top: -8px;
 }
@@ -594,7 +596,7 @@ export default {
     background-color: #fff;
     height: 100%;
     top: 0px;
-    transform: translatex(-29vh);
+    transform: translatex(-48vh);
 
   }
   .lg {
@@ -605,7 +607,7 @@ export default {
   .show {
     display: block;
     border-bottom: 1px solid black;
-    padding-left: 24vh;
+   padding-left: 35vh;
   }
   #text-submenu {
     color: black;
@@ -623,11 +625,11 @@ export default {
   .icon{
          z-index: 10000;
     position: relative;
-    top: 10vh;
+    top: 12vh;
     left: 2vh;
   }
   .reponsive-menu {
-    top: 11vh;
+        top: 13vh;
     left: 2vh;
   }
   .reponsive-menu-submenu {
