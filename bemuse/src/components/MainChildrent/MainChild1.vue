@@ -1,19 +1,37 @@
 <template>
-    <div class="slider-container relative max-w[100%] overflow-hidden">
-      <div class="slider w-[100%] flex transition-transform duration-500" :style="{ transform: `translateX(-${slideIndex * 100}%)` }">
+    <div class="slider-container relative max-w-full overflow-hidden">
+      <div class="slider w-full flex transition-transform duration-500 ease-out" :style="{ transform: `translateX(-${slideIndex * 100}%)` }">
         <div class="slide w-full flex-shrink-0 items-center justify-center relative text-center" v-for="(slide, index) in slides" :key="index">
-            <img :src="slide.img" class="h-full w-full object-cover z-[1]" alt="Museum Image">
-          <div class="content relative bg-transparent p-[2rem] items-center justify-center text-white" >
-            <h2>{{ slide.title }}</h2>
-          <p>{{ slide.description }}</p>
-          <button>{{ slide.buttonText }}</button>
+            <img :src="slide.img" class="h-full w-full object-cover z-[1] " alt="Museum Image">
+            <div class=" w-full content absolute top-[45%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 text-white">
+          
+          <h2 class="text-white font-normal text-[19px] mb-6 " style="font-family: 'Roboto Mono';letter-spacing:.36px" >{{ slide.title1 }}</h2>
+                <h2 class="text-white font-semibold text-[40px] " style="font-family: 'Roboto Mono';letter-spacing:.32px" >{{ slide.title2 }}</h2>
+          <p class="text-white font-light text-[18px] mb-6 px-[120px] focus:outline-none" style="font-family: 'Roboto Mono';letter-spacing:.32px" >{{ slide.description }}</p>
+          <div class="m-1">
+            
+            <button class="hover:bg-opacity-50 transition duration-300 ease-in-out bg-black hover:bg-black text-white font-normal py-2 px-4 rounded mr-2 text-[1.1rem] bg-transparent border-white border-[1px] w-[220px] h-[50px]"  style="font-family: 'Roboto Mono';letter-spacing:.32px">{{ slide.buttonText1 }}</button>
+            <button class="bg-white hover:bg-opacity-50 text-black font-normal py-2 px-4 rounded  text-[1.1rem]  border-white border-[0.5px] w-[220px] h-[50px]"  style="font-family: 'Roboto Mono';letter-spacing:.32px">{{ slide.buttonText2 }}</button>
           </div>
+          
+        </div>
         </div>
       </div>
-      <button @click="prevSlide" class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-white bg-opacity-75 text-black py-2 px-4 rounded-full focus:outline-none z-30">Prev</button>
-    <button @click="nextSlide" class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-white bg-opacity-75 text-black py-2 px-4 rounded-full focus:outline-none z-30">Next</button>
+      <button @click="prevSlide" class="font-bold absolute top-[45%] left-0 transform -translate-y-1/2  text-white py-44 px-8 rounded-full focus:outline-none z-30">
+        <img src="/src/views/img/chevrons-left-regular-240.png" class="inline-block w-8" alt="">
+        Prev</button>
+    <button @click="nextSlide" class="font-bold absolute top-[45%] right-0 transform -translate-y-1/2  text-white py-100 px-8 rounded-full focus:outline-none z-30">
+        Next
+        <img src="/src/views/img/chevrons-right-regular-240.png" class="inline-block w-8" alt="">
+    </button>
+       
     </div>
   </template>
+  <style scoped>
+.slider {
+  transition: transform 1000ms ease-out;
+}
+</style>
   
   
 
@@ -23,22 +41,28 @@ export default {
     return {
       slides: [
         {
-          img: "/src/views/img/Pic-museum1.png",
-          title: "Slide 1 Title cdddddddddddddddddddddddddd",
-          description: "Slide 1 Description",
-          buttonText: "Button 1"
+          img: "/src/views/img/pic-museum3.jpg",
+          title1: "Enjoy art space",
+          title2: "Eclectic Collection",
+          description: "Today the MooM has a leading collection of modern and contemporary art comprising works by international artists which reflects the energy, commitment and diversity of emerging artists.",
+          buttonText1: "BUY TICKETS",
+          buttonText2: "VISIT US",
         },
         {
           img: "/src/views/img/pic-museum2.jpg",
-          title: "Slide 2 Title",
-          description: "Slide 2 Description",
-          buttonText: "Button 2"
+          title1: "Feel the art mentality",
+          title2: "Diversity of Thoughts ",
+          description: "Welcome to our range of Original Paintings, Limited and Open Edition Framed Prints and Edge Sculpture. Our gallery presents an extensive selection of wall art, images and frames.",
+          buttonText1: "BUY TICKETS",
+          buttonText2: "VISIT US",
         },
         {
-          img: "/src/views/img/Pic-museum1.png",
-          title: "Slide 3 Title",
-          description: "Slide 3 Description",
-          buttonText: "Button 3"
+          img: "/src/views/img/pic-museum-5.jpg",
+          title1: "Find aesthetic pleasure",
+          title2: "Bestselling Artists",
+          description: "Our aim is to serve the needs of all art lovers; from those looking for a one-off painting to serious collectors looking for investments. We believe that in investment terms the artist.",
+          buttonText1: "BUY TICKETS",
+          buttonText2: "VISIT US",
         }
         // Thêm nhiều slides ở đây nếu bạn muốn
       ],
@@ -54,7 +78,7 @@ export default {
     }
   },
   mounted() {
-    setInterval(this.nextSlide, 2000);
+    setInterval(this.nextSlide, 100000);
   }
 };
 </script>

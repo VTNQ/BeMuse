@@ -21,7 +21,7 @@ export default {
         <div>
             <MainChild1/>
         </div>
-        <div class="max-h-[2500px] w-[100vw]">
+        <div class="top-[100%] max-h-[2500px] w-[100vw] bg-black">
             <MainChild2/>
         </div>
     </div>
