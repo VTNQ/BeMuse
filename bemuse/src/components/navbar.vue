@@ -1,6 +1,6 @@
 <template>
   <div
-    class="h-[100vh] w-[28%] bg-black md:fixed md:left-0 md:justify-between responsive-big"
+    class="h-[100vh] w-[23%] bg-black md:fixed md:left-0 md:justify-between responsive-big"
   >
     <div
       class="py-[60px] px-0 flex items-center ml-28 relative justify-start lg"
@@ -268,7 +268,7 @@ export default {
       const screenWidth = window.innerWidth;
 
      
-        if (screenWidth <= 1199) {
+        if (screenWidth <= 1280) {
         menu.style.transform = this.isActive === 1 ? 'translateX(-48vh)' : 'translateX(0vh)';
       } else {
         menu.style.transform = 'translateX(-1vh)';
@@ -291,7 +291,7 @@ export default {
         const menu = document.querySelector('.menushow');
   const screenWidth = window.innerWidth;
 
-  if (screenWidth <= 1199) {
+  if (screenWidth <= 1280) {
     menu.style.transform = 'translateX(-48vh)';
   } else {
     menu.style.transform = 'translateX(-1vh)';
@@ -478,7 +478,7 @@ export default {
   font-family: "Roboto Mono";
   letter-spacing: 0.28px;
 }
-@media (max-width: 1199px) {
+@media (max-width: 1280px) {
     .hamburger-box {
     position: relative;
     width: 24px;
@@ -486,7 +486,6 @@ export default {
     display: inline-block;
     vertical-align: middle;
     left: 30px;
-    max-height: auto;
 }
     .hamburger-inner {
    width: 24px;
@@ -662,7 +661,7 @@ export default {
     letter-spacing: 0.36px;
   }
   .museum-responsive{
-    top: -10vh;
+    top: -15vh;
   }
   .icon{
          z-index: 10000;

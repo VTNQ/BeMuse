@@ -34,7 +34,7 @@ export default {
     </div>
 
 
-    <div class="h-full bg-red-600">
+    <div class="min-h-[573px]  relative max-w-full bg-white">
       <MainChild4 />
     </div>
 
