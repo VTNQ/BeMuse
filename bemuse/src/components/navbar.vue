@@ -247,12 +247,12 @@ export default {
     return {
       isDropdownOpen: false,
       isDropdownOpen1: false,
+      isActive:1,
     };
   },
   mounted(){
      this.initializeMenu();
     window.addEventListener('resize', this.handleResize);
-    document.addEventListener('click', this.closeDropdowns);
   },
   methods: {
       initializeMenu() {
@@ -261,25 +261,41 @@ export default {
     showmenu(){
         const menu=document.querySelector('.menushow');
        menu.style.transform = 'translateX(0vh)';
+       this.isActive=2;
     },
      updateMenuTransform() {
       const menu = document.querySelector('.menushow');
       const screenWidth = window.innerWidth;
 
-      if (screenWidth > 1199) {
-       menu.style.transform = 'translateX(0vh)';
-      }else if(screenWidth>1199){
-        
-      }
+     
+        if (screenWidth <= 1199) {
+        menu.style.transform = this.isActive === 1 ? 'translateX(-48vh)' : 'translateX(0vh)';
+      } else {
+        menu.style.transform = 'translateX(-1vh)';
+      }      
+      
     },
         handleResize() {
       this.updateMenuTransform();
-    },  
+    },
+       updateDropdownStyles(selector, isOpen) {
+      const dropdownBtn = document.querySelector(selector);
+
+      if (isOpen) {
+        // styles when dropdown is open
+      } else {
+        // Reset styles when dropdown is closed
+      }
+    },
     closemenu(){
         const menu = document.querySelector('.menushow');
- 
+  const screenWidth = window.innerWidth;
 
- menu.style.transform = 'translateX(-48vh)';
+  if (screenWidth <= 1199) {
+    menu.style.transform = 'translateX(-48vh)';
+  } else {
+    menu.style.transform = 'translateX(-1vh)';
+  }
     },
     toggleDropdown1() {
       this.isDropdownOpen1 = !this.isDropdownOpen1;
