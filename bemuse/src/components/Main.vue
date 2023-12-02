@@ -26,7 +26,7 @@ export default {
         <MainChild2/>
       </div>
     </div>
-    <div class="h-full">
+    <div class="h-3/4 bg-amber-950">
       <MainChild3/>
     </div>
     <div class="h-full">

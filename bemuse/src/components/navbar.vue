@@ -1,6 +1,6 @@
 <template>
   <div
-    class="h-[100vh] w-[28%] bg-black md:fixed md:left-0 md:justify-between responsive-big"
+    class="h-[100vh] w-[23%] bg-black md:fixed md:left-0 md:justify-between responsive-big"
   >
     <div
       class="py-[60px] px-0 flex items-center ml-28 relative justify-start lg"
