@@ -291,7 +291,7 @@ export default {
         const menu = document.querySelector('.menushow');
   const screenWidth = window.innerWidth;
 
-  if (screenWidth <= 1199) {
+  if (screenWidth <= 1280) {
     menu.style.transform = 'translateX(-48vh)';
   } else {
     menu.style.transform = 'translateX(-1vh)';
@@ -486,7 +486,6 @@ export default {
     display: inline-block;
     vertical-align: middle;
     left: 30px;
-    max-height: auto;
 }
     .hamburger-inner {
    width: 24px;
