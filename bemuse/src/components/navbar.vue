@@ -662,7 +662,7 @@ export default {
     letter-spacing: 0.36px;
   }
   .museum-responsive{
-    top: -10vh;
+    top: -15vh;
   }
   .icon{
          z-index: 10000;
