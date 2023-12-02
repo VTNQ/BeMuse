@@ -268,7 +268,7 @@ export default {
       const screenWidth = window.innerWidth;
 
      
-        if (screenWidth <= 1199) {
+        if (screenWidth <= 1280) {
         menu.style.transform = this.isActive === 1 ? 'translateX(-48vh)' : 'translateX(0vh)';
       } else {
         menu.style.transform = 'translateX(-1vh)';
@@ -291,7 +291,7 @@ export default {
         const menu = document.querySelector('.menushow');
   const screenWidth = window.innerWidth;
 
-  if (screenWidth <= 1199) {
+  if (screenWidth <= 1280) {
     menu.style.transform = 'translateX(-48vh)';
   } else {
     menu.style.transform = 'translateX(-1vh)';
@@ -661,7 +661,7 @@ export default {
     letter-spacing: 0.36px;
   }
   .museum-responsive{
-    top: -10vh;
+    top: -15vh;
   }
   .icon{
          z-index: 10000;
