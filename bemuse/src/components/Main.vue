@@ -16,13 +16,13 @@ export default {
 </script>
 
 <template>
-  <div class="main-container bg-pink-400">
+  <div class="main-container bg-pink-400 ">
     <div class="h-full">
       <MainChild1/>
     </div>
-    <div class="relative  bg-slate-800  z-30 h-full">
-      <div class="absolute flex justify-center items-center min-h-screen w-full bg-slate-800 z-30">
-        <h1 class="text-white text-center">hello</h1>
+    <div class="relative  bg-white   z-30 h-3/4 px-30">
+      <div class="absolute flex justify-center items-center  w-full bg-white z-30">
+  
         <MainChild2/>
       </div>
     </div>
