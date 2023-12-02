@@ -14,7 +14,7 @@ export default {
 <template>
     <div class="main-container bg-pink-400">
         
-      <div>
+      <div class="h-full">
         <MainChild1/>      
       </div>
       <div class="relative  bg-slate-800  z-30">        
