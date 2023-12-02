@@ -486,7 +486,6 @@ export default {
     display: inline-block;
     vertical-align: middle;
     left: 30px;
-    max-height: auto;
 }
     .hamburger-inner {
    width: 24px;
