@@ -2,7 +2,6 @@
 import { RouterLink, RouterView } from 'vue-router'
 import navbar from './components/navbar.vue'
 import Main from './components/Main.vue'
-import MainChild2 from './components/MainChildrent/MainChild2.vue'  
 
 
 </script>
