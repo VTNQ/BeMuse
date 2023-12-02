@@ -252,6 +252,7 @@ export default {
   mounted(){
      this.initializeMenu();
     window.addEventListener('resize', this.handleResize);
+    document.addEventListener('click', this.closeDropdowns);
   },
   methods: {
       initializeMenu() {
@@ -265,33 +266,20 @@ export default {
       const menu = document.querySelector('.menushow');
       const screenWidth = window.innerWidth;
 
-      if (screenWidth <= 1199) {
-        menu.style.transform = 'translateX(-48vh)';
-      } else {
-        menu.style.transform = 'translateX(-1vh)';
+      if (screenWidth > 1199) {
+       menu.style.transform = 'translateX(0vh)';
+      }else if(screenWidth>1199){
+        
       }
     },
         handleResize() {
       this.updateMenuTransform();
-    },
-       updateDropdownStyles(selector, isOpen) {
-      const dropdownBtn = document.querySelector(selector);
-
-      if (isOpen) {
-        // styles when dropdown is open
-      } else {
-        // Reset styles when dropdown is closed
-      }
-    },
+    },  
     closemenu(){
         const menu = document.querySelector('.menushow');
-  const screenWidth = window.innerWidth;
+ 
 
-  if (screenWidth <= 1199) {
-    menu.style.transform = 'translateX(-48vh)';
-  } else {
-    menu.style.transform = 'translateX(-1vh)';
-  }
+ menu.style.transform = 'translateX(-48vh)';
     },
     toggleDropdown1() {
       this.isDropdownOpen1 = !this.isDropdownOpen1;
