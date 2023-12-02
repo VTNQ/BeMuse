@@ -12,10 +12,10 @@ import Main from './components/Main.vue'
 <template>
   <div class="flex">
     <!-- Navbar ở đây (nếu có chiều rộng cố định, hãy thêm vào) -->
-    <navbar class="w-[28%] fixed top-0 left-0 z-50" /> <!-- Giả sử navbar chiếm 30% chiều rộng -->
+    <navbar class="w-[23%] fixed top-0 left-0 z-50" /> <!-- Giả sử navbar chiếm 30% chiều rộng -->
     
     <!-- Main chiếm 70% chiều rộng và đặt ở bên phải -->
-    <Main class="w-[72%] ml-auto h-full" />
+    <Main class="w-[77%] ml-auto h-full" />
     
     
     
