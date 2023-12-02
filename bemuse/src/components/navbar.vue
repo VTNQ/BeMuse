@@ -478,7 +478,7 @@ export default {
   font-family: "Roboto Mono";
   letter-spacing: 0.28px;
 }
-@media (max-width: 1199px) {
+@media (max-width: 1280px) {
     .hamburger-box {
     position: relative;
     width: 24px;
