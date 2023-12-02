@@ -13,3 +13,14 @@ const main= createApp(App)
 main.use(router)
 
 main.mount('#main')
+
+
+    window.onload = function() {
+      setTimeout(function() {
+        const spinner = document.getElementById('loadingSpinner');
+        if (spinner) {
+          spinner.style.display = 'none';
+        }
+      }, 1000);
+    };
+  

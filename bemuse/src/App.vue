@@ -2,8 +2,7 @@
 import { RouterLink, RouterView } from 'vue-router'
 import navbar from './components/navbar.vue'
 import Main from './components/Main.vue'
-import MainChild2 from './components/MainChildrent/MainChild2.vue'  
-
+import LoadingSpinner from './components/LoadingSpinner.vue'
 
 </script>
 
@@ -12,11 +11,12 @@ import MainChild2 from './components/MainChildrent/MainChild2.vue'
 
 <template>
   <div class="flex">
+    
     <!-- Navbar ở đây (nếu có chiều rộng cố định, hãy thêm vào) -->
     <navbar class="w-[28%] fixed top-0 left-0 z-50" /> <!-- Giả sử navbar chiếm 30% chiều rộng -->
     
     <!-- Main chiếm 70% chiều rộng và đặt ở bên phải -->
-    <Main class="w-[72%] ml-auto " />
+    <Main class="w-[72%] ml-auto h-full" />
     
     
     
