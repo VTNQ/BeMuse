@@ -247,6 +247,7 @@ export default {
     return {
       isDropdownOpen: false,
       isDropdownOpen1: false,
+      isActive:1,
     };
   },
   mounted(){
@@ -260,16 +261,19 @@ export default {
     showmenu(){
         const menu=document.querySelector('.menushow');
        menu.style.transform = 'translateX(0vh)';
+       this.isActive=2;
     },
      updateMenuTransform() {
       const menu = document.querySelector('.menushow');
       const screenWidth = window.innerWidth;
 
-      if (screenWidth <= 1199) {
-        menu.style.transform = 'translateX(-48vh)';
+     
+        if (screenWidth <= 1199) {
+        menu.style.transform = this.isActive === 1 ? 'translateX(-48vh)' : 'translateX(0vh)';
       } else {
         menu.style.transform = 'translateX(-1vh)';
-      }
+      }      
+      
     },
         handleResize() {
       this.updateMenuTransform();
