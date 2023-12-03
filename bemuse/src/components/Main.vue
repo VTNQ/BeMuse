@@ -17,17 +17,26 @@ export default {
   },
   data() {
     return {
-      hasScrolledToElement: false,
+      hasScrolledToElement3: false,
+      hasScrolledToElement4: false,
     };
   },
   methods: {
     handleScroll() {
-      const element = this.$refs.fadeElement;
-      if (element && !this.hasScrolledToElement) {
-        const position = element.getBoundingClientRect();
-        // Check if element is within the viewport
-        if (position.top < window.innerHeight && position.bottom >= 0) {
-          this.hasScrolledToElement = true;
+      // For MainChild3
+      const element3 = this.$refs.fadeElement3;
+      if (element3 && !this.hasScrolledToElement3) {
+        const position3 = element3.getBoundingClientRect();
+        if (position3.top < window.innerHeight && position3.bottom >= 0) {
+          this.hasScrolledToElement3 = true;
+        }
+      }
+      // For MainChild4
+      const element4 = this.$refs.fadeElement4;
+      if (element4 && !this.hasScrolledToElement4) {
+        const position4 = element4.getBoundingClientRect();
+        if (position4.top < window.innerHeight && position4.bottom >= 0) {
+          this.hasScrolledToElement4 = true;
         }
       }
     }
@@ -55,14 +64,13 @@ export default {
     </div>
 
 
-    <div ref="fadeElement" :class="{ 'fade-in-up': hasScrolledToElement }" class="h-[527px] px-7 relative max-w-full bg-white">
-      <MainChild3 />
-    </div>
+    <div ref="fadeElement3" :class="{ 'fade-in-up': hasScrolledToElement3 }" class="h-[527px] px-7 relative max-w-full bg-white">
+    <MainChild3 />
+  </div>
 
-
-    <div class="min-h-[573px] max-h-[100%]  relative max-w-full bg-white">
-      <MainChild4 />
-    </div>
+  <div ref="fadeElement4" :class="{ 'fade-in-up': hasScrolledToElement4 }" class="min-h-[573px] max-h-[100%] relative max-w-full bg-white">
+    <MainChild4 />
+  </div>
     <div class="h-2/3 relative max-w-full justify-center z-30 bg-amber-400">
       <div class="absolute w-full h-full mt-6">
         <MainChild5/>
@@ -80,8 +88,8 @@ export default {
     </div>
 
 
-    <div class="h-full">
-      <MainChild8 />
+    <div class="h-full ">
+      <MainChild8  />
     </div>
 
 
