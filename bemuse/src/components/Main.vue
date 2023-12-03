@@ -16,7 +16,7 @@ export default {
 </script>
 
 <template>
-  <div class="main-container bg-pink-400 ">
+  <div class="main-container bg-white ">
     <div class="h-full">
       <MainChild1/>
     </div>
@@ -32,8 +32,8 @@ export default {
     <div class="h-full">
       <MainChild4/>
     </div>
-    <div class="h-full relative max-w-full justify-center bg-amber-400 z-30">
-      <div class="absolute w-full h-full bg-amber-400">
+    <div class="h-2/3 relative max-w-full justify-center z-30 bg-amber-400">
+      <div class="absolute w-full h-full mt-6">
         <MainChild5/>
       </div>
     </div>
