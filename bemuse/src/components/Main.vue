@@ -20,7 +20,7 @@ export default {
     <div class="h-full">
       <MainChild1/>
     </div>
-    <div class="relative  bg-white   z-30 h-3/4 px-30">
+    <div  class="relative  bg-white   z-30 h-3/4 px-25">
       <div class="absolute flex justify-start items-center  w-full bg-white z-30">
   
         <MainChild2/>
