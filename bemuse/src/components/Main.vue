@@ -47,11 +47,11 @@ export default {
     <div class="">
       <MainChild1 />
     </div>
-
-
-    <div class="relative flex bg-red-950 z-30 h-full">
-      <h1 class="text-white text-center">hello</h1>
-        <MainChild2 />
+    <div  class="relative  bg-white   z-30 h-3/4 px-25">
+      <div class="absolute flex justify-start items-center  w-full bg-white z-30">
+  
+        <MainChild2/>
+      </div>
     </div>
 
 
