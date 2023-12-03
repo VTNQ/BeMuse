@@ -5,6 +5,8 @@ import MainChild4 from "./MainChildrent/MainChild4.vue";
 import MainChild5 from "./MainChildrent/MainChild5.vue";
 import MainChild3 from "@/components/MainChildrent/MainChild3.vue";
 
+  
+
 export default {
   components: {
     MainChild1,
@@ -13,11 +15,35 @@ export default {
     MainChild4,
     MainChild5,
   },
+  data() {
+    return {
+      hasScrolledToElement: false,
+    };
+  },
+  methods: {
+    handleScroll() {
+      const element = this.$refs.fadeElement;
+      if (element && !this.hasScrolledToElement) {
+        const position = element.getBoundingClientRect();
+        // Check if element is within the viewport
+        if (position.top < window.innerHeight && position.bottom >= 0) {
+          this.hasScrolledToElement = true;
+        }
+      }
+    }
+  },
+  mounted() {
+    window.addEventListener('scroll', this.handleScroll);
+    this.handleScroll(); // Trigger on initial load in case element is already in view
+  },
+  beforeDestroy() {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
 };
 </script>
 
 <template>
-  <div class="main-container bg-pink-400">
+  <div class="main-container bg-pink-400" @scroll="handleScroll">
     <div class="">
       <MainChild1 />
     </div>
@@ -29,19 +55,17 @@ export default {
     </div>
 
 
-    <div class="h-[527px] px-7 relative max-w-full bg-white">
+    <div ref="fadeElement" :class="{ 'fade-in-up': hasScrolledToElement }" class="h-[527px] px-7 relative max-w-full bg-white">
       <MainChild3 />
     </div>
 
 
-    <div class="min-h-[573px]  relative max-w-full bg-white">
+    <div class="min-h-[573px] max-h-[100%]  relative max-w-full bg-white">
       <MainChild4 />
     </div>
-
-
-    <div class="h-full relative max-w-full justify-center bg-amber-400 z-30">
-      <div class="absolute w-full h-full ">
-        <MainChild5 />
+    <div class="h-2/3 relative max-w-full justify-center z-30 bg-amber-400">
+      <div class="absolute w-full h-full mt-6">
+        <MainChild5/>
       </div>
     </div>
 
@@ -76,4 +100,31 @@ export default {
 .relative {
   position: relative;
 }
+
+.fade-in-up {
+  animation: fadeInUp 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Start from below the original position */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Scoped styles */
+.main-container {
+  overflow-y: scroll;
+}
+
+.relative {
+  position: relative;
+}
+
 </style>
+
+

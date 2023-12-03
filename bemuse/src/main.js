@@ -2,6 +2,9 @@ import './assets/main.css'
 import './style.css'
 
 
+  AOS.init();
+
+
 import { createApp } from 'vue'
 import App from './App.vue'
 

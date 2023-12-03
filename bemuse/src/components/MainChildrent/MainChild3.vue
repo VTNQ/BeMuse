@@ -1,4 +1,8 @@
-<script setup></script>
+<script setup>
+
+  AOS.init();
+
+</script>
 
 <template>
   <div class="container-mainmain relative w-full  overflow-hidden h-full">
