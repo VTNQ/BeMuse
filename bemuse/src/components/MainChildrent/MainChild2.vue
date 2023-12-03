@@ -1,12 +1,12 @@
 <template>
   <div 
- class="grid grid-cols-4  gap-4 p-[28px] reponsive-media ">
-    <div  class="img relative overflow-hidden">
+ class="grid grid-cols-4  gap-4 p-[28px] reponsive-media nav">
+    <div  class="img relative overflow-hidden ">
       <!-- Image -->
-      <img src="/src/views/img/museum_of_cham_sculpture.jpg" class="w-[244px] h-[230px] object-cover" alt="">
+      <img src="/src/views/img/museum_of_cham_sculpture.jpg" class=" repson w-[244px] h-[230px] object-cover " alt="">
       
       <!-- Overlay -->
-      <div class="bg-black w-[244px] h-[230px] absolute top-0 left-0 opacity-0 transition-opacity duration-500 hover:opacity-100">
+      <div class="bg-black w-[244px] h-[230px]  absolute top-0 left-0 opacity-0 transition-opacity duration-500 hover:opacity-100 repson-black">
         <div class="flex flex-col items-center justify-center h-full">
           <div class="opacity-1 mb-2">
             <a class="text-white" style="font-family:'Roboto Mono';font-weight: 300;font-style: normal;font-size: inherit" href="">
@@ -24,8 +24,8 @@
 
     <!-- Another grid item -->
     <div class="relative overflow-hidden">
-      <img src="/src/views/img/pic-museum3.jpg" class="w-[244px] h-[230px] object-cover" alt="">
-      <div class="bg-black w-[244px] h-[230px] absolute top-0 left-0 opacity-0 transition-opacity duration-500 hover:opacity-100">
+      <img src="/src/views/img/pic-museum3.jpg" class="w-[244px] h-[230px] object-cover repson" alt="">
+      <div class="bg-black w-[244px] h-[230px] absolute top-0 left-0 opacity-0 transition-opacity duration-500 hover:opacity-100 repson-black">
         <div class="flex flex-col items-center justify-center h-full">
           <div class="opacity-1 mb-2">
             <a class="text-white" style="font-family:'Roboto Mono';font-weight: 300;font-style: normal;font-size: inherit" href="">
@@ -41,8 +41,25 @@
       </div>
     </div>
     <div class="relative overflow-hidden">
-      <img src="/src/views/img/219147_btmt.jpeg" class="w-[244px] h-[230px] object-cover" alt="">
-      <div class="bg-black w-[244px] h-[230px] absolute top-0 left-0 opacity-0 transition-opacity duration-500 hover:opacity-100">
+      <img src="/src/views/img/219147_btmt.jpeg" class="w-[244px] h-[230px] object-cover repson" alt="">
+      <div class="bg-black w-[244px] h-[230px] absolute top-0 left-0 opacity-0 transition-opacity duration-500 hover:opacity-100 repson-black">
+        <div class="flex flex-col items-center justify-center h-full">
+          <div class="opacity-1 mb-2">
+            <a class="text-white" style="font-family:'Roboto Mono';font-weight: 300;font-style: normal;font-size: inherit" href="">
+             Artur Fruento
+            </a>
+          </div>
+          <h2 class="text-center text-[32px]">
+            <a href="https://mooseoom.foxthemes.me/portfolio/strange-room/" style="font-family: inherit;font-weight: 500;">
+             		Abstraction of the present				
+            </a>
+          </h2>
+        </div>
+      </div>
+    </div>
+    <div class="relative overflow-hidden ">
+      <img src="/src/views/img/219147_btmt.jpeg" class="w-[263px] h-[169px] object-cover repson" alt="">
+      <div class="bg-black w-[263px] h-[169px] absolute top-0 left-0 opacity-0 transition-opacity duration-500 hover:opacity-100 repson-black">
         <div class="flex flex-col items-center justify-center h-full">
           <div class="opacity-1 mb-2">
             <a class="text-white" style="font-family:'Roboto Mono';font-weight: 300;font-style: normal;font-size: inherit" href="">
@@ -58,8 +75,8 @@
       </div>
     </div>
     <div class="relative overflow-hidden">
-      <img src="/src/views/img/219147_btmt.jpeg" class="w-[263px] h-[169px] object-cover" alt="">
-      <div class="bg-black w-[263px] h-[169px] absolute top-0 left-0 opacity-0 transition-opacity duration-500 hover:opacity-100">
+      <img src="/src/views/img/image-galery-6-1-scaled.jpg" class="w-[244px] h-[150px] object-cover repson" alt="">
+      <div class="bg-black w-[244px] h-[150px] absolute top-0 left-0 opacity-0 transition-opacity duration-500 hover:opacity-100 repson-black">
         <div class="flex flex-col items-center justify-center h-full">
           <div class="opacity-1 mb-2">
             <a class="text-white" style="font-family:'Roboto Mono';font-weight: 300;font-style: normal;font-size: inherit" href="">
@@ -74,25 +91,8 @@
         </div>
       </div>
     </div>
-    <div class="relative overflow-hidden">
-      <img src="/src/views/img/image-galery-6-1-scaled.jpg" class="w-[244px] h-[150px] object-cover" alt="">
-      <div class="bg-black w-[244px] h-[150px] absolute top-0 left-0 opacity-0 transition-opacity duration-500 hover:opacity-100">
-        <div class="flex flex-col items-center justify-center h-full">
-          <div class="opacity-1 mb-2">
-            <a class="text-white" style="font-family:'Roboto Mono';font-weight: 300;font-style: normal;font-size: inherit" href="">
-             Artur Fruento
-            </a>
-          </div>
-          <h2 class="text-center text-[32px]">
-            <a href="https://mooseoom.foxthemes.me/portfolio/strange-room/" style="font-family: inherit;font-weight: 500;">
-             		Abstraction of the present				
-            </a>
-          </h2>
-        </div>
-      </div>
-    </div>
-    <div class="relative overflow-hidden w-[527px] width-long h-[232px]">
-      <img src="/src/views/img/image-galery-6-1-scaled.jpg" class="w-full h-full object-cover" alt="">
+    <div class="relative overflow-hidden w-[527px] h-[232px]">
+      <img src="/src/views/img/image-galery-6-1-scaled.jpg" class="w-full h-full object-cover img-auto" alt="">
       <div class="bg-black w-[527px]  h-[232px] black-responsive  absolute top-0 left-0 opacity-0 transition-opacity duration-500 hover:opacity-100">
         <div class="flex flex-col items-center justify-center h-full">
           <div class="opacity-1 mb-2">
@@ -109,8 +109,8 @@
       </div>
     </div>
     <div class="relative overflow-hidden left-[282px] bottom-[9vh] postion-respon">
-      <img src="/src/views/img/image-galery-6-1-scaled.jpg" class="w-[263px] h-[169px] object-cover reposinve-img" alt="">
-      <div class="bg-black w-[263px] h-[169px] absolute top-0 left-0 opacity-0 transition-opacity duration-500 hover:opacity-100 postion-black">
+      <img src="/src/views/img/image-galery-6-1-scaled.jpg" class="w-[263px] h-[169px] object-cover reposinve-img respon img-auto" alt="">
+      <div class="bg-black w-[263px] h-[169px] absolute top-0 left-0 opacity-0 transition-opacity duration-500 hover:opacity-100 img-auto">
         <div class="flex flex-col items-center justify-center h-full">
           <div class="opacity-1 mb-2">
             <a class="text-white" style="font-family:'Roboto Mono';font-weight: 300;font-style: normal;font-size: inherit" href="">
@@ -126,8 +126,8 @@
       </div>
     </div>
     <div class="relative overflow-hidden right-responsive">
-      <img src="/src/views/img/image-galery-6-1-scaled.jpg" class="w-[263px] h-[230px] mt-[16vh] object-cover" alt="">
-      <div class="bg-black  mt-[16vh] w-[263px] h-[230px] absolute top-0 left-0 opacity-0 transition-opacity duration-500 hover:opacity-100">
+      <img src="/src/views/img/image-galery-6-1-scaled.jpg" class="w-[263px] h-[230px] mt-[16vh] object-cover top-img" alt="">
+      <div class="bg-black  mt-[16vh] w-[263px] h-[230px] absolute top-0 left-0 opacity-0 transition-opacity duration-500 hover:opacity-100 img-auto">
         <div class="flex flex-col items-center justify-center h-full">
           <div class="opacity-1 mb-2">
             <a class="text-white" style="font-family:'Roboto Mono';font-weight: 300;font-style: normal;font-size: inherit" href="">
@@ -142,9 +142,9 @@
         </div>
       </div>
     </div>
-    <div class="relative overflow-hidden top-[-26vh] zoom-on-hover top-responsive">
-      <img src="/src/views/img/image-galery-6-1-scaled.jpg" class="w-[244px] h-[150px] object-cover" alt="">
-      <div class="bg-black w-[244px] h-[150px]   absolute top-0 left-0 opacity-0 transition-opacity duration-500 hover:opacity-100">
+    <div class="relative overflow-hidden top-[-26vh] zoom-on-hover top-responsive ">
+      <img src="/src/views/img/image-galery-6-1-scaled.jpg" class="w-[244px] h-[150px] object-cover top-img" alt="">
+      <div class="bg-black w-[244px] h-[150px]   absolute top-0 left-0 opacity-0 transition-opacity duration-500 hover:opacity-100 img-auto ">
         <div class="flex flex-col items-center justify-center h-full">
           <div class="opacity-1 mb-2">
             <a class="text-white" style="font-family:'Roboto Mono';font-weight: 300;font-style: normal;font-size: inherit" href="">
@@ -159,8 +159,12 @@
         </div>
       </div>
     </div>
+      <div style="border:1px solid position: relative;
+    top: -11vh;
+    width: 421%;
+    left: -38vh;" class="mt-[12px]"></div>
   </div>
-  
+
 </template>
 
 <style scoped>
@@ -2205,5 +2209,106 @@
     margin-top: -19px;
     margin-left: 2px;
   } 
+  }
+  @media only screen and (max-width:320px){
+    .reponsive-media{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    .width-long{
+       height: auto;
+       width: auto;
+  }
+  .repson{
+    width: auto;
+    height: auto;
+  }
+   .black-responsive{
+    width: auto;
+    height: auto;
+  }
+  .postion-respon{
+    bottom: 0px;
+    left: 0px;
+    height: auto;
+    width: auto;
+  }
+  .repson-black{
+width: 100%;
+height: 100%;
+  }
+ .right-responsive{
+  margin-top: -106px;
+ 
+ }
+ .top-img{
+ width: auto;
+    height: auto;
+    margin-bottom: 185px;
+}
+.img-auto{
+  width: auto;
+  height: auto;
+}
+  }
+  @media only screen and (max-width:480px){
+    .reponsive-media{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    .width-long{
+       height: auto;
+       width: auto;
+  }
+  .repson{
+    width: auto;
+    height: auto;
+  }
+   .black-responsive{
+    width: auto;
+    height: auto;
+  }
+  .postion-respon{
+    bottom: 0px;
+    left: 0px;
+    height: auto;
+    width: auto;
+  }
+  .repson-black{
+width: 100%;
+height: 100%;
+  }
+ .right-responsive{
+  margin-top: -106px;
+ 
+ }
+ .top-img{
+ width: auto;
+    height: auto;
+    margin-bottom: 185px;
+}
+.img-auto{
+  width: auto;
+  height: auto;
+}
+
+  }
+  @media only screen and (max-width:600px){
+    .reponsive-media{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    .width-long{
+       height: auto;
+       width: auto;
+  }
+
+.postion-respon{
+    bottom: 0px;
+    left: 0px;
+    height: auto;
+    width: auto;
+  }
+.img-auto{
+  width: auto;
+  height: auto;
+}
   }
 </style>

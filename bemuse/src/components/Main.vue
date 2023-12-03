@@ -47,14 +47,14 @@ export default {
     <div class="">
       <MainChild1 />
     </div>
-    <div  class="relative  bg-white   z-30 h-3/4 px-25">
+    <div  class="relative  bg-white   z-30 h-[36%] px-25  nav">
       <div class="absolute flex justify-start items-center  w-full bg-white z-30">
   
         <MainChild2/>
       </div>
     </div>
 
-
+    
     <div ref="fadeElement" :class="{ 'fade-in-up': hasScrolledToElement }" class="h-[527px] px-7 relative max-w-full bg-white">
       <MainChild3 />
     </div>
