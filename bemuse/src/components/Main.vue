@@ -4,6 +4,7 @@ import MainChild2 from "./MainChildrent/MainChild2.vue";
 import MainChild4 from "./MainChildrent/MainChild4.vue";
 import MainChild5 from "./MainChildrent/MainChild5.vue";
 import MainChild3 from "@/components/MainChildrent/MainChild3.vue";
+import MainChild8 from "./MainChildrent/MainChild8.vue"
 
   
 
@@ -14,6 +15,7 @@ export default {
     MainChild3,
     MainChild4,
     MainChild5,
+    MainChild8,
   },
   data() {
     return {
@@ -56,7 +58,7 @@ export default {
     <div class="">
       <MainChild1 />
     </div>
-    <div  class="relative  bg-white   z-30 h-3/4 px-25">
+    <div  class="relative  bg-white   z-30 h-[40%] px-25  nav">
       <div class="absolute flex justify-start items-center  w-full bg-white z-30">
   
         <MainChild2/>
@@ -78,17 +80,17 @@ export default {
     </div>
 
 
-    <div class="h-full">
+    <div class="">
       <MainChild6 />
     </div>
 
 
-    <div class="h-full">
+    <div class="">
       <MainChild7 />
     </div>
 
 
-    <div class="h-full ">
+    <div class="w-full relative bg-purple-700 ">
       <MainChild8  />
     </div>
 
