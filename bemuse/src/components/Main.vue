@@ -3,8 +3,10 @@ import MainChild1 from "./MainChildrent/MainChild1.vue";
 import MainChild2 from "./MainChildrent/MainChild2.vue";
 import MainChild4 from "./MainChildrent/MainChild4.vue";
 import MainChild5 from "./MainChildrent/MainChild5.vue";
+import MainChild6 from "./MainChildrent/MainChild6.vue";
 import MainChild3 from "@/components/MainChildrent/MainChild3.vue";
 import MainChild8 from "./MainChildrent/MainChild8.vue"
+import MainChild9 from "./MainChildrent/MainChild9.vue"
 
   
 
@@ -15,7 +17,9 @@ export default {
     MainChild3,
     MainChild4,
     MainChild5,
+    MainChild6,
     MainChild8,
+    MainChild9,
   },
   data() {
     return {
@@ -54,33 +58,33 @@ export default {
 </script>
 
 <template>
-  <div class="main-container bg-pink-400" @scroll="handleScroll">
+  <div class="main-container bg-white" @scroll="handleScroll">
     <div class="">
       <MainChild1 />
     </div>
-    <div  class="relative  bg-white   z-30 h-[40%] px-25  nav">
-      <div class="absolute flex justify-start items-center  w-full bg-white z-30">
+    <div  class="relative  bg-white   z-30 min-h-screen px-25  nav" style="transition:all ease 3s">
+      <div class=" justify-start items-center  w-full bg-white z-30">
   
         <MainChild2/>
       </div>
     </div>
 
 
-    <div ref="fadeElement3" :class="{ 'fade-in-up': hasScrolledToElement3 }" class="h-[527px] px-7 relative max-w-full bg-white">
+    <div ref="fadeElement3" :class="{ 'fade-in-up': hasScrolledToElement3 }" class="h-[400px] px-7 relative max-w-full bg-white">
     <MainChild3 />
   </div>
 
   <div ref="fadeElement4" :class="{ 'fade-in-up': hasScrolledToElement4 }" class="min-h-[573px] max-h-[100%] relative max-w-full bg-white">
     <MainChild4 />
   </div>
-    <div class="h-2/3 relative max-w-full justify-center z-30 bg-amber-400">
+    <!-- <div class="h-2/3 relative max-w-full justify-center z-30 bg-amber-400">
       <div class="absolute w-full h-full mt-6">
         <MainChild5/>
       </div>
-    </div>
+    </div> -->
 
 
-    <div class="">
+    <div class="min-h-screen bg-purple-800">
       <MainChild6 />
     </div>
 
@@ -90,13 +94,14 @@ export default {
     </div>
 
 
-    <div class="w-full relative bg-purple-700 ">
+    <div class="w-full h-auto relative bg-white  ">
       <MainChild8  />
     </div>
 
 
-    <div class="h-full">
-      <MainChild9 />
+    <div class="main9 h-full relative bg-white mt-24 px-7">
+      <MainChild9  />
+ 
     </div>
 
 
@@ -133,6 +138,11 @@ export default {
 
 .relative {
   position: relative;
+}
+@media (max-width:655px){
+  .main9{
+    margin-top: 40px;
+  }
 }
 
 </style>

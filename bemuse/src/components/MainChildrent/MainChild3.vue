@@ -6,7 +6,7 @@
 
 <template>
   <div class="container-mainmain relative w-full  overflow-hidden h-full">
-    <div class="container-main absolute bottom-0 w-full h-[400px] bg-white">
+    <div class="container-main absolute  w-full h-[400px] bg-white">
       <div class="container w-full h-full grid grid-cols-2 ">
         <div class="img h-full">
           <img
