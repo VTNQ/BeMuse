@@ -8,7 +8,6 @@ import MainChild3 from "@/components/MainChildrent/MainChild3.vue";
 import MainChild8 from "./MainChildrent/MainChild8.vue"
 import MainChild9 from "./MainChildrent/MainChild9.vue"
 
-  
 
 export default {
   components: {
@@ -60,48 +59,50 @@ export default {
 <template>
   <div class="main-container bg-white" @scroll="handleScroll">
     <div class="">
-      <MainChild1 />
+      <MainChild1/>
     </div>
-    <div  class="relative  bg-white   z-30 min-h-screen px-25  nav" style="transition:all ease 3s">
+    <div class="relative  bg-white   z-30 min-h-screen px-25  nav" style="transition:all ease 3s">
       <div class=" justify-start items-center  w-full bg-white z-30">
-  
+
         <MainChild2/>
       </div>
     </div>
 
 
-    <div ref="fadeElement3" :class="{ 'fade-in-up': hasScrolledToElement3 }" class="h-[400px] px-7 relative max-w-full bg-white">
-    <MainChild3 />
-  </div>
+    <div ref="fadeElement3" :class="{ 'fade-in-up': hasScrolledToElement3 }"
+         class="h-[400px] px-7 relative max-w-full bg-white">
+      <MainChild3/>
+    </div>
 
-  <div ref="fadeElement4" :class="{ 'fade-in-up': hasScrolledToElement4 }" class="min-h-[573px] max-h-[100%] relative max-w-full bg-white">
-    <MainChild4 />
-  </div>
-    <!-- <div class="h-2/3 relative max-w-full justify-center z-30 bg-amber-400">
+    <div ref="fadeElement4" :class="{ 'fade-in-up': hasScrolledToElement4 }"
+         class="min-h-[573px] max-h-[100%] relative max-w-full bg-white">
+      <MainChild4/>
+    </div>
+    <div class="min-h-[10%] relative max-w-full justify-center z-30 bg-amber-400">
       <div class="absolute w-full h-full mt-6">
         <MainChild5/>
       </div>
-    </div> -->
+    </div>
 
 
     <div class="min-h-screen bg-white">
-      <MainChild6 />
+      <MainChild6/>
     </div>
 
 
     <div class="">
-      <MainChild7 />
+      <MainChild7/>
     </div>
 
 
     <div class="w-full h-auto relative bg-white  ">
-      <MainChild8  />
+      <MainChild8/>
     </div>
 
 
     <div class="main9 h-full relative bg-white mt-24 px-7">
-      <MainChild9  />
- 
+      <MainChild9/>
+
     </div>
 
 
@@ -112,6 +113,7 @@ export default {
 .main-container {
   overflow-y: scroll;
 }
+
 .relative {
   position: relative;
 }
@@ -139,8 +141,9 @@ export default {
 .relative {
   position: relative;
 }
-@media (max-width:655px){
-  .main9{
+
+@media (max-width: 655px) {
+  .main9 {
     margin-top: 40px;
   }
 }
