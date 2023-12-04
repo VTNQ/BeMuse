@@ -64,7 +64,7 @@
 <div class="grid grid-rows-2 w-full">
 <div class="grid grid-cols-3 gap-4 grid-repon">
     <div class="col-span-1">
-        <img class="w-[40%] " src="/src/views/img/logo_statue_black.png" alt="">
+        <img class="w-[40%] img-auto" src="/src/views/img/logo_statue_black.png" alt="">
         <div class="mt-6">
             <p class="text-black font-light text-[1rem]" style="font-family: 'Roboto Mono';letter-spacing:.36px">3 Wakehurst Street</p>
             <p class="text-black font-light text-[1rem]" style="font-family: 'Roboto Mono';letter-spacing:.36px">New York,NY 10002</p>
@@ -166,6 +166,77 @@
     grid-template-columns: repeat(1, minmax(0, 1fr));
     margin-top: 9px;
   }
+  
+  .grid-text{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .grid-foo{
+    justify-content: flex-start;
+  }
+ .last-footer{
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 0px;
+  padding-right: 20%;
+  margin-top: 0px;
+ }
+ .img-auto{
+    width: 12%;
+  }
+}
+@media only screen and (min-width:481px) and (max-width:600px){
+  .grid-repon{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  
+  }
+  .grid-text{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .grid-foo{
+    justify-content: flex-start;
+  }
+ .last-footer{
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 0px;
+  padding-right: 20%;
+  margin-top: 0px;
+ }
+ .img-auto{
+    width: 12%;
+  }
+}
+@media only screen and (min-width:601px) and (max-width:821px){
+  .grid-repon{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    margin-top: 9px;
+  }
+  
+  .grid-text{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .grid-foo{
+    justify-content: flex-start;
+  }
+ .last-footer{
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 0px;
+  padding-right: 20%;
+  margin-top: 0px;
+ }
+ .img-auto{
+    width: 12%;
+  }
+}
+@media only screen and (min-width:803px) and (max-width:895px){
+  .grid-repon{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  
+  }
   .grid-text{
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
@@ -181,9 +252,9 @@
   margin-top: 0px;
  }
 }
-@media only screen and (min-width:481px) and (max-width:600px){
+@media only screen and (min-width:895px) and (max-width:949px){
   .grid-repon{
-    grid-template-columns: repeat(1, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   
   }
   .grid-text{
