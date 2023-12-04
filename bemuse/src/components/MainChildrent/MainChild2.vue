@@ -93,7 +93,7 @@
     </div>
     <div class="relative overflow-hidden w-[527px] h-[232px] img-auto">
       <img src="/src/views/img/image-galery-6-1-scaled.jpg" class="w-full h-full object-cover img-auto width-long" alt="">
-      <div class="bg-black w-[527px]  h-[232px] black-responsive  absolute top-0 left-0 opacity-0 transition-opacity duration-500 hover:opacity-100">
+      <div class="bg-black w-[527px]  h-[232px] black-responsive  absolute top-0 left-0 opacity-0 transition-opacity duration-500 hover:opacity-100 class-auto" id="img">
         <div class="flex flex-col items-center justify-center h-full">
           <div class="opacity-1 mb-2">
             <a class="text-white" style="font-family:'Roboto Mono';font-weight: 300;font-style: normal;font-size: inherit" href="">
@@ -110,7 +110,7 @@
     </div>
     <div class="relative overflow-hidden left-[282px] bottom-[9vh] postion-respon">
       <img src="/src/views/img/image-galery-6-1-scaled.jpg" class="w-[263px] h-[169px] object-cover reposinve-img respon img-auto " alt="">
-      <div class="bg-black w-[263px] h-[169px] absolute top-0 left-0 opacity-0 transition-opacity duration-500 hover:opacity-100 img-auto postion-black">
+      <div class="bg-black w-[263px] h-[169px] absolute top-0 left-0 opacity-0 transition-opacity duration-500 hover:opacity-100 img-auto postion-black class-auto" id="img-auto">
         <div class="flex flex-col items-center justify-center h-full">
           <div class="opacity-1 mb-2">
             <a class="text-white" style="font-family:'Roboto Mono';font-weight: 300;font-style: normal;font-size: inherit" href="">
@@ -127,7 +127,7 @@
     </div>
     <div class="relative overflow-hidden right-responsive">
       <img src="/src/views/img/image-galery-6-1-scaled.jpg" class="w-[263px] h-[230px] mt-[16vh] object-cover top-img" alt="">
-      <div class="bg-black  mt-[16vh] w-[263px] h-[230px] absolute top-0 left-0 opacity-0 transition-opacity duration-500 hover:opacity-100 img-auto ">
+      <div class="bg-black  mt-[16vh] w-[263px] h-[230px] absolute top-0 left-0 opacity-0 transition-opacity duration-500 hover:opacity-100 img-auto auto-class" id="auto-img">
         <div class="flex flex-col items-center justify-center h-full">
           <div class="opacity-1 mb-2">
             <a class="text-white" style="font-family:'Roboto Mono';font-weight: 300;font-style: normal;font-size: inherit" href="">
@@ -144,7 +144,7 @@
     </div>
     <div class="relative overflow-hidden top-[-26vh] zoom-on-hover top-responsive ">
       <img src="/src/views/img/image-galery-6-1-scaled.jpg" class="w-[244px] h-[150px] object-cover top-img" alt="">
-      <div class="bg-black w-[244px] h-[150px]   absolute top-0 left-0 opacity-0 transition-opacity duration-500 hover:opacity-100 img-auto ">
+      <div class="bg-black w-[244px] h-[150px]   absolute top-0 left-0 opacity-0 transition-opacity duration-500 hover:opacity-100 img-auto auto" id="img-auto">
         <div class="flex flex-col items-center justify-center h-full">
           <div class="opacity-1 mb-2">
             <a class="text-white" style="font-family:'Roboto Mono';font-weight: 300;font-style: normal;font-size: inherit" href="">
@@ -170,7 +170,6 @@
 <style scoped>
 .img:hover .bg-black {
   opacity: 1;
-  transition: all ease 0.5s;
 }
 .postion-respon, .reposinve-img, .width-long, .postion-black, .black-responsive, .right-responsive, .top-responsive,.reponsive-media {
   transition: all 0.5s ease; /* Add a transition to all properties with a duration of 0.5 seconds and ease timing function */
@@ -2397,6 +2396,7 @@ height: 100%;
 }
 
   }
+
   @media only screen and (max-width:1024px){
     .reponsive-media{
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -2409,16 +2409,26 @@ height: 100%;
   width: 100%;
   height: 100%;
 }
+
+.auto{
+  width: 100%;
+  height: 62%;
+}
+.auto-class{
+  width: 100%;
+  height: 50%;
+}
+.class-auto{
+  width: 100%;
+  height: 102%;
+}
 .postion-respon{
     bottom: 0px;
     left: 0px;
     height: auto;
     width: auto;
   }
-.img-auto{
-  width: auto;
-  height: auto;
-}
+
  .black-responsive{
     width: auto;
     height: auto;
@@ -2446,7 +2456,18 @@ height: 100%;
   width: auto;
   height: auto;
 }
-
+#img{
+  width: 100%;
+  height: 102%;
+}
+#img-auto{
+  width: 100%;
+  height: 57.9%;
+}
+#auto-img{
+  width: 100%;
+  height: 47%;
+}
   }
   @media only screen and (max-width:768px){
     .reponsive-media{
@@ -2497,6 +2518,17 @@ height: 100%;
   width: auto;
   height: auto;
 }
-
+.auto{
+  width: 100%;
+  height: 62%;
+}
+.auto-class{
+  width: 100%;
+  height: 50%;
+}
+.class-auto{
+  width: 100%;
+  height: 102%;
+}
   }
 </style>
