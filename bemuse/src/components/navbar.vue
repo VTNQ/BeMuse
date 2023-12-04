@@ -7,7 +7,7 @@
     >
       <a href="">
         <img
-          src="/src/views/img/museum.png"
+          src="/src/views/img/logo_statue_white.png"
           width="100"
           class="h-auto max-w-[100%] rounded-none"
           alt=""
