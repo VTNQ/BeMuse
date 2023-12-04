@@ -29,11 +29,13 @@ export default {
 }
 @media (max-width: 505px){
 .frame{
+    width: 100vw;
     height:40vh;
 }
 }
 @media (max-width: 411px){
 .frame{
+    width: 100vw;
     height:30vh;
 }
 }

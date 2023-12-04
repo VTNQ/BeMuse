@@ -183,8 +183,8 @@
 }
 @media only screen and (min-width:481px) and (max-width:600px){
   .grid-repon{
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    margin-top: 9px;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  
   }
   .grid-text{
     grid-template-columns: repeat(1, minmax(0, 1fr));

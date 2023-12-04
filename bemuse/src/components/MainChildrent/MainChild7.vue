@@ -1,5 +1,5 @@
 <template>
-  <div class="text-left">
+  <div class="text-left ml-[6px]">
     <p
       class="text-left font-[16px] text-black"
       style="
@@ -19,16 +19,14 @@
     </h2>
     <div class="wrap">
       <div class="wrapper">
-        <div class="carousel-container">
+        <div class="carousel-container" @mousedown="startDrag" 
+          @mousemove="handleDrag" 
+          @mouseup="endDrag" 
+          @mouseleave="endDrag">
           <ul class="carousel" ref="carousel">
             <li class="card" v-for="(item, index) in items" :key="index">
-              <div
-                style="
-                  border: 1px solid black;
-                  padding: 27px 35px;
-                  margin-bottom: 20px;
-                  margin-top: 10px;
-                "
+              <div class="respon"
+             
               >
                 <h6
                   class="mt-0 font-[16px]"
@@ -38,6 +36,7 @@
                     letter-spacing: 0.64px;
                     color: #000000;
                     font-style: normal;
+                    
                   "
                 >
                   {{ item.item }}
@@ -48,13 +47,39 @@
                 class="img"
                 style="
                   display: flex;
-                  justify-content: center;
-                  align-items: center;
+                  justify-content: flex-start;
+                  align-items: flex-end;
                 "
               >
                 <img :src="item.src" alt="" />
                 <div class="text-center" style="margin-top: 5px">
-                  <h2 class="text-black">author</h2>
+                  <h2
+                    class="text-black"
+                    style="
+                      font-family: 'Crimson Text';
+                      font-weight: bold;
+                      letter-spacing: 0.64px;
+                      color: #000000;
+                      font-style: normal;
+                      font-size: 25px;
+                    "
+                  >
+                    {{ item.author }}
+                  </h2>
+                  <p
+                    style="
+                      font-weight: bold;
+                      color: black;
+                      font-family: 'Roboto Mono';
+                      font-size: 14px;
+                      line-height: 1.86;
+                      letter-spacing: 0.28px;
+                      font-style: normal;
+                      color: black;
+                    "
+                  >
+                    {{ item.position }}
+                  </p>
                 </div>
               </div>
             </li>
@@ -72,40 +97,98 @@ const items = ref([
   {
     src: "/src/views/img/museum_of_cham_sculpture.jpg",
     item: '"We were fortunate enough to attend the opening reception of a landscape exhibit. What an experience to meet the artists."',
+    author: "Norma Jean Thomas",
+    position: "Visitor / Curator",
   },
+  {
+    src:"/src/views/img/testimonaial-image_1.png",
+    item:'"My experience with MooM gallery has been truly delightful. Preparation for the exhibition was done very smoothly..."',
+    author:"Steve Buschemi",
+    position:"Artist / Curator"
+  },
+  {
+    src:"/src/views/img/testimonaial-image_1.png",
+    item:'"I am very grateful to The MooM Gallery for representing my work in NY. Its wonderful staff have so much joy for the new pieces."',
+    author:"Karla Moneco",
+    position:"Artist / Curator"
+  },
+  {
+    src:"/src/views/img/member-2-150x150-1.jpg",
+    item:'"I am very grateful to The MooM Gallery for representing my work in NY. Its wonderful staff have so much joy for the new pieces."',
+    author:"Karla Moneco",
+    position:"Artist / Curator"
+  }
   // Add other items as needed
 ]);
-
+const dragData={
+    isDragging:false,
+    startPosition:0,
+    dragOffset:0,
+}
+const startDrag=(event)=>{
+    dragData.isDragging=true;
+    dragData.startPosition=event.clientX;
+}
+const handleDrag=(event)=>{
+    if(!dragData.isDragging)return;
+    dragData.dragOffset=event.clientX-dragData.startPosition;
+    carousel.value.style.transform=`translateX(-${
+    (currentIndex * (100 / items.value.length) + dragData.dragOffset * 0.1) %
+    100
+  }%)`;
+}
+const endDrag=()=>{
+    if(!dragData.isDragging)return;
+    dragData.isDragging=false;
+    currentIndex=Math.floor((currentIndex - dragData.dragOffset * 0.1 + items.value.length) %
+      items.value.length);
+      
+  carousel.value.style.transition = "transform 0.5s ease-in-out";
+  carousel.value.style.transform = `translateX(-${
+    currentIndex * (100 / items.value.length)
+  }%)`;
+}
 const autoplayInterval = 2500;
 let currentIndex = 0;
 const carousel = ref(null);
-
 const startAutoplay = () => {
   setInterval(() => {
     if (carousel.value) {
-      currentIndex = (currentIndex + 1) % items.value.length;
-      carousel.value.style.transition = "transform 0.5s ease-in-out";
-      carousel.value.style.transform = `translateX(-${
-        currentIndex * (100 / items.value.length)
-      }%)`;
+      currentIndex = (currentIndex + 1) % (items.value.length + 1);
 
-      // Reset transition after the animation is complete
-      setTimeout(() => {
+      if (currentIndex === items.value.length) {
+        // Nếu currentIndex là mục giả ở cuối danh sách, chuyển đến vị trí đầu tiên ngay lập tức
         carousel.value.style.transition = "none";
-      }, 500);
+        currentIndex = -2; // Chuyển về vị trí đầu tiên trong danh sách
+       carousel.value.style.transform = `translateX(${
+    -currentIndex.value * (100 / items.value.length)
+  }%)`;
+        // Force reflow before setting the transition back
+        void carousel.value.offsetWidth;
+      } else {
+        carousel.value.style.transition = "transform 0.5s ease-in-out";
+        carousel.value.style.transform = `translateX(-${
+          currentIndex * (100 / items.value.length)
+        }%)`;
+      }
     }
   }, autoplayInterval);
 };
 
-onMounted(() => {});
+onMounted(() => {
+  startAutoplay();
+});
+
+
 </script>
 
 <style scoped>
 .card .img img {
-  width: 140px;
-  height: 140px;
+  width: 63px;
+  height: 63px;
   object-fit: cover;
   border-radius: 50%;
+  margin-right: 20px;
 }
 
 .wrap {
@@ -124,7 +207,7 @@ onMounted(() => {});
 .wrapper .carousel {
   display: flex;
   gap: 16px;
-  overflow: hidden;
+ 
   transition: transform 0.5s ease-in-out;
 }
 
@@ -142,5 +225,78 @@ onMounted(() => {});
   align-items: self-start;
   justify-content: center;
   flex-direction: column;
+}
+.respon{
+     width:487px;
+                height:133px;
+                  border: 1px solid black;
+                  padding: 27px 35px;
+                  margin-bottom: 20px;
+                  margin-top: 10px;
+                  box-sizing:border-box
+}
+@media (max-width: 320px) {
+  .carousel .card {
+    flex: 0 0 calc((100% / 1) - 12px);
+    height: 342px;
+    background: #fff;
+    border-radius: 8px;
+    display: flex;
+    align-items: self-start;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .respon {
+    padding: 30px;
+    width: 487px;
+    height: 133px;
+    padding: 30px;
+  }
+}
+@media (max-width: 400px) {
+  .carousel .card {
+    flex: 0 0 calc((100% / 1) - 12px);
+    height: 342px;
+    background: #fff;
+    border-radius: 8px;
+    display: flex;
+    align-items: self-start;
+    justify-content: center;
+    flex-direction: column;
+  }
+ .wrapper {
+    max-width: 100%px;
+    width: 30%;
+}
+.wrap{
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.respon {
+    padding: 30px;
+    width: 487px;
+    height: 133px;
+    padding: 30px;
+  }
+}
+@media (max-width: 500px) {
+  .carousel .card {
+    flex: 0 0 100%; /* Chuyển sang hiển thị 1 slide trên một dòng */
+    margin-right: 0; /* Đặt margin-right thành 0 để tránh lỗ hổng */
+  }
+
+  .respon {
+    width: 378px;
+    height: 165px;
+    padding: 30px;
+  }
+  .wrapper {
+    max-width: 1197px;
+    width: 30%;
+}
+.wrap{
+  justify-content: flex-start;
+  align-items: flex-start;
+}
 }
 </style>

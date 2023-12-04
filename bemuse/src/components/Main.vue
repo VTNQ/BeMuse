@@ -107,7 +107,8 @@ if (element2) {
       </div>
     </div> -->
 
-    <div class="min-h-screen bg-purple-800">
+
+    <div class="min-h-screen bg-white">
       <MainChild6 />
     </div>
 
