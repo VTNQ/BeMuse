@@ -2398,7 +2398,7 @@ height: 100%;
   }
 @media only screen and (min-width:600px) and (max-width:890px){
    .reponsive-media{
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(1, minmax(0, 1fr));
     }
     .width-long{
        height: auto;
@@ -2470,7 +2470,7 @@ height: 100%;
 }
   @media only screen and (min-width:890px) and (max-width:1024px){
     .reponsive-media{
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(1, minmax(0, 1fr));
     }
     .width-long{
        height: auto;
