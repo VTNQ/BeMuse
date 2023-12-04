@@ -25,7 +25,10 @@ export default {
     return {
       hasScrolledToElement3: false,
       hasScrolledToElement4: false,
+      hasScrolledToElement8:false,
+      hasScrolledToElement6:false,
     };
+    hasScrolledToElement8:false
   },
   methods: {
     handleScroll() {
@@ -43,6 +46,22 @@ export default {
         const position4 = element4.getBoundingClientRect();
         if (position4.top < window.innerHeight && position4.bottom >= 0) {
           this.hasScrolledToElement4 = true;
+        }
+      }
+      // For MainChild6
+      const element6 = this.$refs.fadeElement6;
+      if (element6 && !this.hasScrolledToElement6) {
+        const position6 = element6.getBoundingClientRect();
+        if (position6.top < window.innerHeight && position6.bottom >= 0) {
+          this.hasScrolledToElement6 = true;
+        }
+      }
+      // For MainChild8
+      const element8 = this.$refs.fadeElement8;
+      if (element8 && !this.hasScrolledToElement8) {
+        const position8 = element8.getBoundingClientRect();
+        if (position8.top < window.innerHeight && position8.bottom >= 0) {
+          this.hasScrolledToElement8 = true;
         }
       }
     }
@@ -84,7 +103,7 @@ export default {
     </div> -->
 
 
-    <div class="min-h-screen bg-white">
+    <div ref="fadeElement6" :class="{ 'fade-in-up': hasScrolledToElement6 }" class="min-h-screen bg-white">
       <MainChild6 />
     </div>
 
@@ -94,7 +113,7 @@ export default {
     </div>
 
 
-    <div class="w-full h-auto relative bg-white  ">
+    <div ref="fadeElement8" :class="{ 'fade-in-up': hasScrolledToElement8 }" class="w-full h-auto relative bg-white  ">
       <MainChild8  />
     </div>
 
