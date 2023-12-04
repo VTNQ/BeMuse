@@ -47,7 +47,7 @@ export default {
     <div class="">
       <MainChild1 />
     </div>
-    <div  class="relative  bg-white   z-30 h-[40%] px-25  nav" style="transition:all ease 3s">
+    <div  class="relative  bg-white   z-30 min-h-screen px-25  nav" style="transition:all ease 3s">
       <div class="absolute flex justify-start items-center  w-full bg-white z-30">
   
         <MainChild2/>
