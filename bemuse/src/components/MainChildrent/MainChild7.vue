@@ -254,30 +254,7 @@ onMounted(() => {
   }
 }
 @media (max-width: 400px) {
-  .carousel .card {
-    flex: 0 0 calc((100% / 1) - 12px);
-    height: 342px;
-    background: #fff;
-    border-radius: 8px;
-    display: flex;
-    align-items: self-start;
-    justify-content: center;
-    flex-direction: column;
-  }
- .wrapper {
-    max-width: 100%px;
-    width: 30%;
-}
-.wrap{
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-.respon {
-    padding: 30px;
-    width: 487px;
-    height: 133px;
-    padding: 30px;
-  }
+ 
 }
 @media (max-width: 500px) {
   
