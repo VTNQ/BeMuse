@@ -185,6 +185,12 @@ export default {
     min-height: 50%;
   }
 }
+@media (min-width: 0px) {
+  .main6{
+  min-height: 0%;
+  }
+
+}
 </style>
 
 
