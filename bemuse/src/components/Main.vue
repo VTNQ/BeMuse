@@ -27,7 +27,10 @@ export default {
       hasScrolledToElement2:false,
       hasScrolledToElement3: false,
       hasScrolledToElement4: false,
+      hasScrolledToElement8:false,
+      hasScrolledToElement6:false,
     };
+    hasScrolledToElement8:false
   },
   methods: {
     handleScroll() {
@@ -47,20 +50,23 @@ export default {
           this.hasScrolledToElement4 = true;
         }
       }
-       const element2 = this.$refs.fadeElement2;
-
-if (element2) {
-  const position2 = element2.getBoundingClientRect();
-
-  if (position2.top < window.innerHeight && position2.bottom >= 0 && !this.hasScrolledToElement2) {
-    // Element is in the viewport when scrolling down
-    this.hasScrolledToElement2 = true;
-    // Trigger your animation logic here for scrolling down
-
-  } 
-}
-    },
-    
+      // For MainChild6
+      const element6 = this.$refs.fadeElement6;
+      if (element6 && !this.hasScrolledToElement6) {
+        const position6 = element6.getBoundingClientRect();
+        if (position6.top < window.innerHeight && position6.bottom >= 0) {
+          this.hasScrolledToElement6 = true;
+        }
+      }
+      // For MainChild8
+      const element8 = this.$refs.fadeElement8;
+      if (element8 && !this.hasScrolledToElement8) {
+        const position8 = element8.getBoundingClientRect();
+        if (position8.top < window.innerHeight && position8.bottom >= 0) {
+          this.hasScrolledToElement8 = true;
+        }
+      }
+    }
   },
   mounted() {
     window.addEventListener("scroll", this.handleScroll);
@@ -96,15 +102,15 @@ if (element2) {
          class="min-h-[573px] max-h-[100%] relative max-w-full bg-white">
       <MainChild4/>
     </div>
-    <div class="h-[10%] relative max-w-full justify-center z-30 bg-amber-400">
+    <div class="min-h-[10%] relative max-w-full justify-center z-30 bg-white">
       <div class="relative w-full h-full mt-6">
         <MainChild5/>
       </div>
     </div>
 
 
-    <div class="min-h-screen bg-white">
-      <MainChild6/>
+    <div ref="fadeElement6" :class="{ 'fade-in-up': hasScrolledToElement6 }" class="min-h-screen bg-white">
+      <MainChild6 />
     </div>
 
 
@@ -112,8 +118,9 @@ if (element2) {
       <MainChild7 />
     </div>
 
-    <div class="w-full h-auto relative bg-white">
-      <MainChild8 />
+
+    <div ref="fadeElement8" :class="{ 'fade-in-up': hasScrolledToElement8 }" class="w-full h-auto relative bg-white  ">
+      <MainChild8  />
     </div>
 
     <div class="main9 h-full relative bg-white mt-24 px-7">
@@ -125,6 +132,7 @@ if (element2) {
 <style>
 .main-container {
   overflow-y: scroll;
+  
 }
 
 .relative {
@@ -149,11 +157,10 @@ if (element2) {
 /* Scoped styles */
 .main-container {
   overflow-y: scroll;
+  height: 100%;
 }
 
-.relative {
-  position: relative;
-}
+
 @media (max-width: 655px) {
   .main9 {
    margin-top: -2px;
