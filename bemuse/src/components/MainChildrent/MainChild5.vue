@@ -5,7 +5,7 @@
 <template>
 <div class="max-w-full h-full relative absolute">
   <div class="flex flex-wrap justify-around justify-start p-3 text-black">
-    <div class="xl:w-1/5 md:w-2/5 sm:max-w-full h-3/4 ">
+    <div class="xl:w-1/5 md:w-1/5 sm:w-1/6 h-3/4 ">
       <div class="w-full relative">
         <img src="src/assets/images/5-1.jpg" alt="5-1.jpg">
         <a href="" class="absolute top-0 bottom-0 left-0 right-0 z-0"></a>
@@ -18,7 +18,7 @@
       </a>
       <p class="font-light text-sm mr-10 flex-wrap">The Feminist art movement emerged in the late 1960s amidst the fervor of anti-war…</p>
     </div>
-    <div class="xl:w-1/5 md:w-2/5 sm:max-w-full max-h-full ">
+    <div class="xl:w-1/5 md:w-1/5 sm:w-1/6 h-3/4 ">
       <div class="w-full relative">
         <img src="src/assets/images/5-2.jpg" alt="5-2.jpg">
         <a href="" class="absolute top-0 bottom-0 left-0 right-0 z-0"></a>
@@ -31,7 +31,7 @@
       </a>
       <p class="font-light text-sm mr-10 flex-wrap">Activities like painting, sculpting, drawing, and photography can lower stress levels – providing a distraction from …</p>
     </div>
-    <div class="xl:w-1/5 md:w-2/5 sm:max-w-full max-h-full ">
+    <div class="xl:w-1/5 md:w-1/5 sm:w-1/6 h-3/4 ">
       <div class="w-full relative">
         <img src="src/assets/images/5-3.jpg" alt="5-3.jpg">
         <a href="" class="absolute top-0 bottom-0 left-0 right-0 z-0"></a>
@@ -44,7 +44,7 @@
       </a>
       <p class="font-light text-sm mr-10 flex-wrap">Whatever your opinion, one thing is for sure: these little buddies are everywhere right now…</p>
     </div>
-    <div class="xl:w-1/5 md:w-2/5 sm:max-w-full max-h-full ">
+    <div class="xl:w-1/5 md:w-1/5 sm:w-1/6 h-3/4 ">
       <div class="w-full relative">
         <img src="src/assets/images/5-4.jpg" alt="5-4.jpg" >
         <a href="" class="absolute top-0 bottom-0 left-0 right-0 z-0"></a>
