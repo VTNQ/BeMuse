@@ -102,7 +102,7 @@ export default {
          class="min-h-[573px] max-h-[100%] relative max-w-full bg-white">
       <MainChild4/>
     </div>
-    <div class="min-h-[10%] relative max-w-full justify-center z-30 bg-white">
+    <div class="main6 min-h-[10%] relative max-w-full justify-center z-30 bg-white">
       <div class="relative w-full h-full mt-6">
         <MainChild5/>
       </div>
@@ -177,6 +177,12 @@ export default {
   .main9 {
    margin-top: -2px;
     min-height: 109%;
+  }
+
+}
+@media (max-width: 1025px){
+  .main6{
+    min-height: 50%;
   }
 }
 </style>
