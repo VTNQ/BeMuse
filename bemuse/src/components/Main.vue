@@ -96,17 +96,9 @@ if (element2) {
          class="min-h-[573px] max-h-[100%] relative max-w-full bg-white">
       <MainChild4/>
     </div>
-    <div class="min-h-[10%] relative max-w-full justify-center z-30 bg-amber-400">
-    <div
-      ref="fadeElement4"
-      :class="{ 'fade-in-up': hasScrolledToElement4 }"
-      class="min-h-[573px] max-h-[100%] relative max-w-full bg-white"
-    >
-      <MainChild4 />
-    </div>
-    <div class="h-2/3 relative max-w-full justify-center z-30 bg-amber-400">
-      <div class="absolute w-full h-full mt-6">
-       
+    <div class="h-[10%] relative max-w-full justify-center z-30 bg-amber-400">
+      <div class="relative w-full h-full mt-6">
+        <MainChild5/>
       </div>
     </div>
 
@@ -127,7 +119,6 @@ if (element2) {
     <div class="main9 h-full relative bg-white mt-24 px-7">
       <MainChild9 />
     </div>
-  </div>
   </div>
 </template>
 
