@@ -168,7 +168,7 @@ const startAutoplay = () => {
       } else {
         carousel.value.style.transition = "transform 0.5s ease-in-out";
         carousel.value.style.transform = `translateX(-${
-          currentIndex * (100 / items.value.length)
+          currentIndex * (400 / items.value.length)
         }%)`;
       }
     }
@@ -257,6 +257,14 @@ onMounted(() => {
  
 }
 @media (max-width: 500px) {
-  
+  .respon[data-v-de3420e0] {
+    width: 342px;
+    height: 112px;
+    border: 1px solid black;
+    padding: 17px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+   
+}
 }
 </style>
