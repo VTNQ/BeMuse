@@ -106,7 +106,7 @@ if (element2) {
     </div>
     <div class="h-2/3 relative max-w-full justify-center z-30 bg-amber-400">
       <div class="absolute w-full h-full mt-6">
-        <MainChild5/>
+       
       </div>
     </div>
 
