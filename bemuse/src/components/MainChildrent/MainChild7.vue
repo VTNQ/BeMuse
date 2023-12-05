@@ -280,23 +280,6 @@ onMounted(() => {
   }
 }
 @media (max-width: 500px) {
-  .carousel .card {
-    flex: 0 0 100%; /* Chuyển sang hiển thị 1 slide trên một dòng */
-    margin-right: 0; /* Đặt margin-right thành 0 để tránh lỗ hổng */
-  }
-
-  .respon {
-    width: 378px;
-    height: 165px;
-    padding: 30px;
-  }
-  .wrapper {
-    max-width: 1197px;
-    width: 30%;
-}
-.wrap{
-  justify-content: flex-start;
-  align-items: flex-start;
-}
+  
 }
 </style>
