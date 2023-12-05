@@ -5,7 +5,7 @@
     <div
       class="py-[60px] px-0 flex items-center ml-28 relative justify-start lg"
     >
-      <a href="">
+      <a >
         <img
           src="/src/views/img/logo_statue_white.png"
           width="100"
@@ -30,7 +30,7 @@
                   class="text-white font-bold text-[19px]"
                   id="text"
                   style="letter-spacing: 0.32px"
-                  >Home</a
+                  > <router-link to="/blog">Product management</router-link></a
                 >
                 <span
                   class="dropdown-btn"
