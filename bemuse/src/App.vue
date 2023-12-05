@@ -22,7 +22,9 @@ import Main from './components/Main.vue'
 
 
 <style scoped>
-
+.flex{
+  width: 100vw;
+}
 </style>
 <script>
 export default {
