@@ -1,9 +1,12 @@
 import './assets/main.css'
 import './style.css'
+<<<<<<< HEAD
+=======
 
 import router from './router';
 
 
+>>>>>>> 4d21f493110d649922c903a4ff066bb2ea46c36e
 
 
 import { createApp } from 'vue'
