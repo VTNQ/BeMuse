@@ -3,11 +3,11 @@
 </script>
 
 <template>
-<div class="max-w-full max-h-full relative absolute">
+<div class="max-w-full h-full relative absolute">
   <div class="flex flex-wrap justify-around justify-start p-3 text-black">
-    <div class="xl:w-1/5 md:w-2/5 sm:max-w-full max-h-full ">
+    <div class="xl:w-1/5 md:w-2/5 sm:max-w-full h-3/4 ">
       <div class="w-full relative">
-        <img src="src/assets/images/5-1.jpg" alt="5-1.jpg">
+        <img src="src/assets/images/5-1.jpg" alt="5-1.jpg" style="width: auto;height: auto;object-fit: cover; ">
         <a href="" class="absolute top-0 bottom-0 left-0 right-0 z-0"></a>
       </div>
       <div class="mt-3">
@@ -46,7 +46,7 @@
     </div>
     <div class="xl:w-1/5 md:w-2/5 sm:max-w-full max-h-full ">
       <div class="w-full relative">
-        <img src="src/assets/images/5-4.jpg" alt="5-4.jpg" >
+        <img src="src/assets/images/5-4.jpg" alt="5-4.jpg" style="width: auto;">
         <a href="" class="absolute top-0 bottom-0 left-0 right-0 z-0"></a>
       </div>
       <div class="mt-3">

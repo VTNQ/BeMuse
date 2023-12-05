@@ -1,5 +1,5 @@
 <template>
-    <div   class="slider-container h-[100vh] relative max-w-full overflow-hidden">
+    <div class="slider-container h-[100vh] relative max-w-full overflow-hidden">
       <div class="slider w-full flex transition-transform duration-500 ease-out h-full" :style="{ transform: `translateX(-${slideIndex * 100}%)` }">
         <div class="slide w-full flex-shrink-0 items-center justify-center relative text-center" v-for="(slide, index) in slides" :key="index">
             <img :src="slide.img" class="h-full w-full object-cover z-[1] " alt="Museum Image">
