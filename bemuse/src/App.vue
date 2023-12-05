@@ -10,7 +10,8 @@ import Main from './components/Main.vue'
     
     <!-- Navbar ở đây (nếu có chiều rộng cố định, hãy thêm vào) -->
     <navbar class="xl:w-[23%] fixed top-0 left-0 z-50" /> <!-- Giả sử navbar chiếm 30% chiều rộng -->
-    
+    <router-view />
+    <!-- <router-view to="/collection">Collection</router-view> -->
     <!-- Main chiếm 70% chiều rộng và đặt ở bên phải -->
     <Main class="xl:w-[77%] ml-auto h-full" />
     

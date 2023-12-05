@@ -30,7 +30,7 @@
                   class="text-white font-bold text-[19px]"
                   id="text"
                   style="letter-spacing: 0.32px"
-                  > <router-link to="/blog">Product management</router-link></a
+                  > <router-link to="/collection">Product management</router-link></a
                 >
                 <span
                   class="dropdown-btn"

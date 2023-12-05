@@ -132,7 +132,6 @@ export default {
 <style>
 .main-container {
   overflow-y: scroll;
-  
 }
 
 .relative {
