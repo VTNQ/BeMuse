@@ -78,7 +78,7 @@ if (element2) {
       <MainChild1/>
     </div>
     <div ref="fadeElement2"
-      :class="{ 'flip': hasScrolledToElement2 }"
+      :class="{ 'fade-in-up': hasScrolledToElement2 }"
       class="relative bg-white z-30 min-h-screen px-25 nav"
       style="transition: all ease 3s"
     >
@@ -134,18 +134,7 @@ if (element2) {
 .fade-in-up {
   animation: fadeInUp 1.5s ease-in-out forwards;
 }
-@keyframes flip {
-  0% {
-    transform: perspective(400px) rotateY(-180deg);
-  }
-  100% {
-    transform: perspective(400px) rotateY(0deg);
-  }
-}
-.flip{
-  
-  animation: flip  1.5s ease-in-out forwards;
-}
+
 @keyframes fadeInUp {
   0% {
     opacity: 0;
