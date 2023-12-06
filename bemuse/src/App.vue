@@ -10,16 +10,17 @@ import blog from './components/blog/Blog.vue'
    :style="{
       display: $route.path.startsWith('/user') ? 'block' : '',
       height: $route.path.startsWith('/user') ? '100%' : '',
-      width: $route.path.startsWith('/user') ? '100vw' : ''
+      width: $route.path.startsWith('/user') ? '100vw' : '',
+      overflowY:$route.path.startsWith('/user') ? 'auto' : ''
     }"
     :class="{ flex: $route.path.startsWith('/user') }"
   >
     
     <!-- Navbar ở đây (znếu có chiều rộng cố định, hãy thêm vào) -->
-    <navbar v-if="!$route.path.startsWith('/user')" class="xl:w-[23%] fixed top-0 left-0 z-50" /> <!-- Giả sử navbar chiếm 30% chiều rộng -->
+    <navbar v-if="$route.path.endsWith('/')" class="xl:w-[23%] fixed top-0 left-0 z-50" /> <!-- Giả sử navbar chiếm 30% chiều rộng -->
     
     <!-- Main chiếm 70% chiều rộng và đặt ở bên phải -->
-    <Main v-if="!$route.path.startsWith('/user')" class="xl:w-[77%] ml-auto h-full" />
+    <Main v-if="$route.path.endsWith('/')" class="xl:w-[77%] ml-auto h-full" />
     
   
   <blog v-if="$route.path.startsWith('/user')"/>
