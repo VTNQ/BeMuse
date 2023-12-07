@@ -57,6 +57,7 @@
         </div>
       </div>
     </div>
+    <child/>
     <div class="w-full h-screen relative">
       <img
         class="object-cover h-[90%] w-full"
@@ -206,6 +207,7 @@
   .masonry-grid {
     column-count: 3;
     column-gap: 3rem;
+    margin-right: 2rem;
   }
 
   .masonry-item {
@@ -219,6 +221,10 @@
   }
 }
 @media (max-width: 783px) {
+  .masonry-grid {
+    
+    margin-right: 4rem;
+  }
   h2 {
     font-size: 2.5rem;
   }
@@ -226,10 +232,26 @@
     font-size: 0.75rem;
   }
 }
+@media (max-width: 745px) {
+  .masonry-grid {
+    
+    margin-right: 6rem;
+  }
+  
+}
+@media (max-width: 689px) {
+  .masonry-grid {
+    
+    margin-right: 8rem;
+  }
+  
+}
+
 @media (max-width: 609px) {
   .masonry-grid {
     column-count: 2;
     column-gap: 3rem;
+    margin-right: 4rem;
   }
 
   .masonry-item {
@@ -246,6 +268,11 @@
   }
 }
 @media (max-width: 557px) {
+  .masonry-grid {
+    column-count: 2;
+    column-gap: 3rem;
+    margin-right: 1rem;
+  }
   h2 {
     font-size: 2rem;
   }
@@ -306,7 +333,14 @@
 <script>
 import { ref, computed } from "vue";
 
+import child from "/src/components/secondary_navbar.vue";
+
+
 export default {
+  components: {
+    child,
+  },
+  
   setup() {
     const artworks = ref([
       // Giả sử mỗi tác phẩm có một trường 'category' để lọc
