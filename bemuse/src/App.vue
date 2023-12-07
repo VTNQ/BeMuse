@@ -11,10 +11,17 @@ import gallery from './components/gallery/gallery.vue'
 <template>
   <div
    :style="{
+<<<<<<< HEAD
       display: $route.path.startsWith('/gallery') ? 'block' : '',
       height: $route.path.startsWith('/gallery') ? '100%' : '',
       width: $route.path.startsWith('/gallery') ? '100vw' : '',
       
+=======
+      display: $route.path.startsWith('/user') ? 'block' : '',
+      height: $route.path.startsWith('/user') ? '100%' : '',
+      width: $route.path.startsWith('/user') ? '100vw' : '',
+      overflowY:$route.path.startsWith('/user') ? 'auto' : ''
+>>>>>>> 0bfd25b01eb5dcfa024acb9f6f8c5b50b30221c7
     }"
     :class="{ flex: $route.path.startsWith('/gallery') }
     "
