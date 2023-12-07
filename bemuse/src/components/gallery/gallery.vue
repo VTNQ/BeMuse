@@ -57,6 +57,7 @@
         </div>
       </div>
     </div>
+    <child/>
     <div class="w-full h-screen relative">
       <img
         class="main-img object-cover h-[97.5%] w-full"
@@ -67,10 +68,10 @@
         class="overlay h-[97.5%] absolute inset-0 bg-black opacity-50 z-[2]"
       ></div>
       <h1
-        class="collection text-white z-10 font-bold text-[3rem] absolute top-[42%] left-[42%]"
+        class="collection text-white z-10 font-bold text-[3rem] absolute top-[42%] left-[45%]"
         style="font-family: 'Hedvig Letters Serif'; letter-spacing: 0.36px"
       >
-        Collection
+        Gallery
       </h1>
     </div>
 
@@ -534,6 +535,7 @@
 .devide{
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
+
 .devide_double{
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
@@ -583,3 +585,14 @@
   }
 }
 </style>
+<script>
+import { ref, onMounted, computed } from "vue";
+import child from "/src/components/secondary_navbar.vue";
+
+export default {
+  components: {
+    child,
+  },
+  
+};
+</script>
