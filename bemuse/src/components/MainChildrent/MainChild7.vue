@@ -166,10 +166,20 @@ const startAutoplay = () => {
         // Force reflow before setting the transition back
         void carousel.value.offsetWidth;
       } else {
-        carousel.value.style.transition = "transform 0.5s ease-in-out";
+        const screenWidth = window.innerWidth;
+        if(screenWidth<=500){
+           carousel.value.style.transition = "transform 0.5s ease-in-out";
         carousel.value.style.transform = `translateX(-${
           currentIndex * (400 / items.value.length)
         }%)`;
+        
+        }else{
+ carousel.value.style.transition = "transform 0.5s ease-in-out";
+        carousel.value.style.transform = `translateX(-${
+          currentIndex * (200 / items.value.length)
+        }%)`;
+        }
+       
       }
     }
   }, autoplayInterval);

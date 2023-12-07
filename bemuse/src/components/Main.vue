@@ -89,12 +89,14 @@ export default {
       style="transition: all ease 3s"
     >
       <div class="justify-start items-center w-full bg-white z-30">
+        
         <MainChild2 />
       </div>
     </div>
 
     <div ref="fadeElement3" :class="{ 'fade-in-up': hasScrolledToElement3 }"
          class="h-[400px] px-7 relative max-w-full bg-white">
+        
       <MainChild3/>
     </div>
 

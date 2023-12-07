@@ -1,7 +1,7 @@
 import './assets/main.css'
 import './style.css'
 
-import router from './router';
+import router from './router/index';
 
 
 
@@ -12,8 +12,10 @@ import App from './App.vue'
 
 
 const main= createApp(App);
-
+const main1=createApp(App);
 main.use(router)
+
+  const mainElement = document.getElementById('main');
 
 main.mount('#main')
 

@@ -9,7 +9,7 @@
         <img
           src="/src/views/img/logo_statue_white.png"
           width="100"
-          class="h-auto max-w-[100%] rounded-none"
+          class="h-auto max-w-[100%] rounded-none img-repon"
           alt=""
         />
       </a>
@@ -30,7 +30,7 @@
                   class="text-white font-bold text-[19px]"
                   id="text"
                   style="letter-spacing: 0.32px"
-                  > <router-link to="/collection">Product management</router-link></a
+                  > <router-link to="/collection">Home</router-link></a
                 >
                 <span
                   class="dropdown-btn"
@@ -676,6 +676,25 @@ export default {
   .reponsive-menu-submenu {
     top: -118px;
   }
+}
+@media only screen and (min-width:573px) and (max-width:645px)  {
+  .img-repon{
+   max-width: 43px;
+    margin-left: -82px;
+}
+
+
+}
+@media only screen and (max-width:573px)  {
+  .img-repon{
+  max-width: 55px;
+    margin-left: -97px;
+    margin-left: -203px;
+}
+
+
+
+
 }
 </style>
 
