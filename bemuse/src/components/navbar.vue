@@ -125,7 +125,7 @@
                   class="text-white font-bold text-[19px]"
                   id="text"
                   style="letter-spacing: 0.32px"
-                  >Exhibitions</a
+                  ><router-link to="/exhibitions">Exhibitions</router-link></a
                 >
               </li>
               <li class="relative py-[4px] px-0 mt-3 reponsive-menu">

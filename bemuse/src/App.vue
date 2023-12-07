@@ -5,6 +5,7 @@ import Main from './components/Main.vue'
 import blog from './components/blog/Blog.vue'
 import collection from './components/collection/collection.vue'
 import gallery from './components/gallery/gallery.vue'
+import Exhibitions from './components/exhibitions/Exhibitions.vue'
 
 </script>
 
@@ -32,6 +33,7 @@ import gallery from './components/gallery/gallery.vue'
   <blog v-if="$route.path.startsWith('/user')"/>
   <collection v-if="$route.path.startsWith('/collection')"/>
   <gallery v-if="$route.path.startsWith('/gallery')" />
+  <Exhibitions v-if="$route.path.startsWith('/exhibitions')"/>
   </div>
 </template>
 

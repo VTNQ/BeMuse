@@ -3,8 +3,8 @@
 </script>
 
 <template>
-<div class="container max-w-full h-full relative absolute">
-  <div class="container1 flex flex-wrap justify-around justify-start p-3 text-black">
+<div class="container max-w-full h-full relative">
+  <div class="container1 flex flex-wrap justify-around p-3 text-black">
     <div class="xl:w-1/5 md:w-1/5 sm:w-1/6 h-3/4 ">
       <div class="w-full relative">
         <img src="src/assets/images/5-1.jpg" alt="5-1.jpg" style="width: auto;height: auto;object-fit: cover; ">
