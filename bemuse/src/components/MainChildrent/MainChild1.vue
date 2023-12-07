@@ -7,7 +7,7 @@
 
             <div class=" w-full content absolute top-[45%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 text-white">
           
-          <h2 class="text-white font-normal text-[19px] mb-6 " style="font-family: 'Roboto Mono';letter-spacing:.36px" >{{ slide.title1 }}</h2>
+          <h1 class="text-white font-normal text-[19px] mb-6 " style="font-family: 'Roboto Mono';letter-spacing:.36px" >{{ slide.title1 }}</h1>
                 <h2 class="text-white font-semibold text-[40px] " style="font-family: 'Roboto Mono';letter-spacing:.32px" >{{ slide.title2 }}</h2>
           <p class="text-white font-light text-[18px] mb-6 px-[120px] focus:outline-none" style="font-family: 'Roboto Mono';letter-spacing:.32px" >{{ slide.description }}</p>
           <div class="m-1">
@@ -42,6 +42,13 @@
   background-color: black; /* Màu của lớp phủ */
   opacity: 0.3; /* Điều chỉnh độ trong suốt của lớp phủ */
   z-index: 2; /* Đảm bảo lớp phủ nằm trên hình ảnh */
+}@media (max-width: 781px){
+  h2{
+    font-size: 2rem;
+  }
+  p{
+    font-size: 1rem;
+  }
 }
 </style>
   
