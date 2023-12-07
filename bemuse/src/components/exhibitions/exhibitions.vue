@@ -1,14 +1,8 @@
-<script >
-import secondary_navbar from '/src/components/secondary_navbar.vue';
-export default{
-    components:{
-        "secondary-navbar":secondary_navbar,
-    },
-}
-</script>
+
 
 <template>
-    <div
+    <div class="main-container h-[100vh]" style="scroll-behavior: auto;">
+      <div
       class="max-w-[100%] m-auto px-[30px] py-0 w-[100%] flex justify-between bg-black"
     >
       <div class="flex">
@@ -72,8 +66,17 @@ export default{
         <h1 class="text-white w-full grid justify-items-center absolute">Exhibitions</h1>
       </div>
     </div>
+    </div>
 </template>
 
 <style scoped>
 
 </style>
+<script >
+import secondary_navbar from '/src/components/secondary_navbar.vue';
+export default{
+    components:{
+        "secondary-navbar":secondary_navbar,
+    },
+}
+</script>
