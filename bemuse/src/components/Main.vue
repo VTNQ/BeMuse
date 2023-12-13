@@ -29,8 +29,7 @@ export default {
       hasScrolledToElement4: false,
       hasScrolledToElement8:false,
       hasScrolledToElement6:false,
-    };
-    hasScrolledToElement8:false
+    }
   },
   methods: {
     handleScroll() {
@@ -134,7 +133,6 @@ export default {
 <style>
 .main-container {
   overflow-y: scroll;
-  
 }
 
 .relative {
@@ -189,7 +187,7 @@ export default {
 }
 @media (min-width: 0px) {
   .main6{
-  min-height: 0%;
+  min-height: 0;
   }
 
 }

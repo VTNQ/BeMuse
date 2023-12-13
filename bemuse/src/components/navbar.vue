@@ -30,7 +30,7 @@
                   class="text-white font-bold text-[19px]"
                   id="text"
                   style="letter-spacing: 0.32px"
-                  > <router-link to="/user">Home</router-link></a
+                  > </a
                 >
                 <span
                   class="dropdown-btn"
@@ -125,7 +125,7 @@
                   class="text-white font-bold text-[19px]"
                   id="text"
                   style="letter-spacing: 0.32px"
-                  >Exhibitions</a
+                  ><router-link to="/exhibitions">Exhibitions</router-link></a
                 >
               </li>
               <li class="relative py-[4px] px-0 mt-3 reponsive-menu">
@@ -140,10 +140,10 @@
               <li class="relative py-[4px] px-0 mt-3 reponsive-menu">
                 <a
                   href=""
-                  class="text-white font-bold text-[19px]"
+                  
+                  ><router-link class="text-white font-bold text-[19px]"
                   id="text"
-                  style="letter-spacing: 0.32px"
-                  >Collections</a
+                  style="letter-spacing: 0.32px" to="/collection">Collection</router-link></a
                 >
               </li>
               <li class="relative py-[4px] px-0 mt-3 reponsive-menu">
@@ -152,7 +152,9 @@
                   class="text-white font-bold text-[19px]"
                   id="text"
                   style="letter-spacing: 0.32px"
-                  >Our Gallery</a
+                  ><router-link class="text-white font-bold text-[19px]"
+                  id="text"
+                  style="letter-spacing: 0.32px" to="/gallery">Gallery</router-link></a
                 >
               </li>
               <li class="relative py-[4px] px-0 mt-3 reponsive-menu">
@@ -161,7 +163,9 @@
                   class="text-white font-bold text-[19px]"
                   id="text"
                   style="letter-spacing: 0.32px"
-                  >Contact Us</a
+                  ><router-link class="text-white font-bold text-[19px]"
+                  id="text"
+                  style="letter-spacing: 0.32px" to="/contact">Contact Us</router-link></a
                 >
               </li>
               <div>

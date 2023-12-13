@@ -8,11 +8,13 @@
       <!-- Overlay -->
       <div class="bg-black w-[244px] h-[230px]  absolute top-0 left-0 opacity-0 transition-opacity duration-500 hover:opacity-100 repson-black">
         <div class="flex flex-col items-center justify-center h-full">
+
           <div class="opacity-1 mb-2">
             <a class="text-white" style="font-family:'Roboto Mono';font-weight: 300;font-style: normal;font-size: inherit" href="">
               Monica Frulento
             </a>
           </div>
+          
           <h2 class="text-center text-[32px]">
             <a href="https://mooseoom.foxthemes.me/portfolio/strange-room/" style="font-family: inherit;font-weight: 500;">
               Strange room
