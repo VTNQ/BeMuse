@@ -6,18 +6,19 @@ import blog from './components/blog/Blog.vue'
 import collection from './components/collection/collection.vue'
 import gallery from './components/gallery/gallery.vue'
 import Exhibitions from './components/exhibitions/Exhibitions.vue'
+import Event from './components/event/event.vue'
 
 </script>
 
 <template>
   <div
    :style="{
-      display: $route.path.startsWith('/gallery') ? 'block' : '',
-      height: $route.path.startsWith('/gallery') ? '100%' : '',
-      width: $route.path.startsWith('/gallery') ? '100vw' : '',
+      display: $route.path.startsWith('/event') ? 'block' : '',
+      height: $route.path.startsWith('/event') ? '100%' : '',
+      width: $route.path.startsWith('/event') ? '100vw' : '',
       
     }"
-    :class="{ flex: $route.path.startsWith('/gallery') }
+    :class="{ flex: $route.path.startsWith('/event') }
     "
   >
 
@@ -34,6 +35,7 @@ import Exhibitions from './components/exhibitions/Exhibitions.vue'
   <collection v-if="$route.path.startsWith('/collection')"/>
   <gallery v-if="$route.path.startsWith('/gallery')" />
   <Exhibitions v-if="$route.path.startsWith('/exhibitions')"/>
+  <Event/>
   </div>
 </template>
 

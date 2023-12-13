@@ -26,7 +26,7 @@
                   style="white-space: nowrap"
                 >
                   <a
-                    href="https://mooseoom.foxthemes.me/"
+                    href="#"
                     class="text-[16px] font-bold"
                     style="
                       letter-spacing: 0.32px;
@@ -34,7 +34,9 @@
                       color: black;
                       white-space: nowrap;
                     "
-                    >Home</a
+                    ><router-link class="text-black font-bold text-[16px]"
+                  id="text"
+                  style="letter-spacing: 0.32px" to="/">Home</router-link></a
                   >
                 </li>
                 <li
@@ -582,7 +584,9 @@
                       font-family: Roboto Mono;
                       color: black;
                     "
-                    >Events</a
+                    ><router-link class="text-black font-bold text-[16px]"
+                  id="text"
+                  style="letter-spacing: 0.32px" to="/event">Events</router-link></a
                   >
                 </li>
                 <li
@@ -598,7 +602,9 @@
                       color: black;
                       white-space: nowrap;
                     "
-                    >Collections</a
+                    ><router-link class="text-black font-bold text-[16px]"
+                  id="text"
+                  style="letter-spacing: 0.32px" to="/collection">Collection</router-link></a
                   >
                 </li>
                 <li
@@ -614,7 +620,9 @@
                       color: black;
                       white-space: nowrap;
                     "
-                    >Our Gallery</a
+                    ><router-link class="text-black font-bold text-[16px]"
+                  id="text"
+                  style="letter-spacing: 0.32px" to="/gallery">Our Gallery</router-link></a
                   >
                 </li>
                 <li

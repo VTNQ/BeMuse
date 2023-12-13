@@ -423,7 +423,7 @@ export default {
   width: 10px;
   position: absolute;
   right: 44px;
-  top: 9px;
+  top: 80px;
 }
 .dropdown-btn::before {
   position: absolute;

@@ -104,8 +104,7 @@
       <ul class="cursor-pointer flex justify-center space-x-16">
         <!-- Sử dụng v-on:click để thiết lập bộ lọc và v-bind:class để thêm class 'active' -->
         <li
-          class="text-black font-medium text-[1rem] inline-block"
-          :class="{ 'font-bold': filter === 'all' }"
+          class="text-black font-medium text-[1rem] inline-block" :class="{ 'font-bold': filter === 'all' }"
           @click="setFilter('all')"
           style="font-family: 'Roboto Mono'; letter-spacing: 0.36px"
         >
