@@ -5,8 +5,9 @@
           <div class="flex items-center p-[5px]">
             <a href="">
               <img
-                src="https://mooseoom.foxthemes.me/wp-content/uploads/2019/10/logo-2.png"
-                alt=""
+                class="w-[10%] h-[10%]"
+                src="/src/views/img/logo_statue_black.png"
+                alt="" 
               />
             </a>
           </div>
@@ -722,7 +723,7 @@ export default{
       const screenWidth = window.innerWidth;
 
      
-        if (screenWidth <= 1200) {
+        if (screenWidth <= 1200 ) {
         menu.style.transform = this.isActive === 1 ? 'translateX(-49vh)' : 'translateX(0vh)';
         close.style.display='flex';
       } else {
@@ -751,6 +752,7 @@ export default{
     menu.style.transform = 'translateX(-49vh)';
   } else {
     menu.style.transform = 'translateX(-1vh)';
+    this.isActive=1
   }
     },
     
@@ -870,6 +872,7 @@ export default{
 }
 .sub-menu:hover .sub-menu1{
    opacity: 1;
+   visibility: visible;
 }
 .sub-menu:hover a {
   position: relative;
@@ -893,6 +896,7 @@ export default{
   white-space: nowrap;
   transition: all .2s;
   opacity: 0;
+  visibility: hidden;
 }
 
 .menu::before {
@@ -934,6 +938,7 @@ export default{
   border-radius: 50%;
   border: 1px solid black;
   z-index: 99;
+ visibility: visible;
 }
 .menu:hover::before,
 .menu:hover .mega-menu {
@@ -1022,6 +1027,7 @@ grid-template-columns: 1fr 1fr;
     left: -1px;
     padding-top: 66px;
     z-index: 9999;
+    height: 100%;
     width: 320px;
     background-color: white;
     transition: .35s;
@@ -1220,6 +1226,7 @@ top: -1px;
     font-weight: 700;
     
 }
+
 }
 
 </style>

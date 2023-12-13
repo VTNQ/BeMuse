@@ -13,7 +13,7 @@ const mainElement = document.getElementById('main');
 // Use router.beforeEach to execute code before navigation
 router.beforeEach((to, from, next) => {
   // Check if the route path is "/user"
-  if (to.path === '/user') {
+  if (to.path === '/user' || to.path === '/contact' || to.path==="/blog") {
     mainElement.style.overflowY = 'auto';
     mainElement.style.height = '100%';
   } else {

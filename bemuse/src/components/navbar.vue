@@ -165,7 +165,7 @@
                   style="letter-spacing: 0.32px"
                   ><router-link class="text-white font-bold text-[19px]"
                   id="text"
-                  style="letter-spacing: 0.32px" to="/user">Contact Us</router-link></a
+                  style="letter-spacing: 0.32px" to="/contact">Contact Us</router-link></a
                 >
               </li>
               <div>

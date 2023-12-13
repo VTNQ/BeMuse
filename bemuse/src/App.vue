@@ -5,9 +5,10 @@ import Main from './components/Main.vue'
 import blog from './components/blog/Blog.vue'
 import collection from './components/collection/collection.vue'
 import gallery from './components/gallery/gallery.vue'
-import Exhibitions from './components/exhibitions/Exhibitions.vue'
+import Exhibitions from './components/exhibitions/exhibitions.vue'
 import Event from './components/event/event.vue'
 
+import contact from './components/ContactUs/contact.vue'
 </script>
 
 <template>
@@ -31,11 +32,12 @@ import Event from './components/event/event.vue'
     <Main v-if="$route.path.endsWith('/')" class="xl:w-[77%] ml-auto h-full" />
     
   
-  <blog v-if="$route.path.startsWith('/user')"/>
+  <blog v-if="$route.path.startsWith('/blog')"/>
   <collection v-if="$route.path.startsWith('/collection')"/>
   <gallery v-if="$route.path.startsWith('/gallery')" />
   <Exhibitions v-if="$route.path.startsWith('/exhibitions')"/>
-  <Event/>
+  <Event v-if="$route.path.startsWith('/event')"/>
+  <contact v-if="$route.path.startsWith('/contact')"/>
   </div>
 </template>
 
