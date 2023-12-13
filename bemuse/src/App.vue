@@ -15,7 +15,9 @@ import contact from './components/ContactUs/contact.vue'
       display: $route.path.startsWith('/gallery') ? 'block' : '',
       height: $route.path.startsWith('/gallery') ? '100%' : '',
       width: $route.path.startsWith('/gallery') ? '100vw' : '',
-      
+        display: $route.path.startsWith('/blog') ? 'block' : '',
+      height: $route.path.startsWith('/blog') ? '100%' : '',
+      width: $route.path.startsWith('/blog') ? '100vw' : '',
     }"
     :class="{ flex: $route.path.startsWith('/gallery') }
     "
@@ -30,11 +32,11 @@ import contact from './components/ContactUs/contact.vue'
     <Main v-if="$route.path.endsWith('/')" class="xl:w-[77%] ml-auto h-full" />
     
   
-  <blog v-if="$route.path.startsWith('/user')"/>
+  <blog v-if="$route.path.startsWith('/blog')"/>
   <collection v-if="$route.path.startsWith('/collection')"/>
   <gallery v-if="$route.path.startsWith('/gallery')" />
   <Exhibitions v-if="$route.path.startsWith('/exhibitions')"/>
-  <contact/>
+  <contact v-if="$route.path.startsWith('/contact')"/>
   </div>
 </template>
 
