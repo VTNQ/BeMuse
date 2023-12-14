@@ -9,17 +9,19 @@ import Exhibitions from './components/exhibitions/exhibitions.vue'
 import Event from './components/event/event.vue'
 import contact from './components/ContactUs/contact.vue'
 import aboutUs from './components/aboutUs/aboutUs.vue'
+import leaderShip from './components/leaderShip/leaderShip.vue'
+import award from './components/award/award.vue'
 </script>
 
 <template>
   <div
    :style="{
-      display: $route.path.startsWith('/aboutUs') ? 'block' : '',
-      height: $route.path.startsWith('/aboutUs') ? '100%' : '',
-      width: $route.path.startsWith('/aboutUs') ? '100vw' : '',
+      display: $route.path.startsWith('/award') ? 'block' : '',
+      height: $route.path.startsWith('/award') ? '100%' : '',
+      width: $route.path.startsWith('/award') ? '100vw' : '',
       
     }"
-    :class="{ flex: $route.path.startsWith('/aboutUs') }
+    :class="{ flex: $route.path.startsWith('/award') }
     "
   >
 
@@ -39,6 +41,8 @@ import aboutUs from './components/aboutUs/aboutUs.vue'
   <Event v-if="$route.path.startsWith('/event')"/>
   <contact v-if="$route.path.startsWith('/contact')"/>
   <aboutUs v-if="$route.path.startsWith('/aboutUs')"/>
+  <leaderShip v-if="$route.path.startsWith('/leaderShip')" />
+  <award v-if="$route.path.startsWith('/award')"/>
   </div>
 </template>
 
