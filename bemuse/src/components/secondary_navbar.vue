@@ -45,7 +45,7 @@
                   style="white-space: nowrap"
                 >
                   <a
-                    href="https://mooseoom.foxthemes.me/"
+                    href="#"
                     class="text-[16px] font-bold"
                     style="
                       letter-spacing: 0.32px;
@@ -74,7 +74,9 @@
                               font-size: 0.92859rem;
                               font-family: Roboto Mono;
                             "
-                            >About Us</a
+                            ><router-link class="text-black font-bold text-[16px]"
+                  id="text"
+                  style="letter-spacing: 0.32px" to="/aboutUs">About Us</router-link></a
                           >
                         </li>
                         <li
@@ -563,7 +565,7 @@
                   style="white-space: nowrap"
                 >
                   <a
-                    href="https://mooseoom.foxthemes.me/"
+                    href=""
                     class="text-[16px] font-bold"
                     style="
                       letter-spacing: 0.32px;

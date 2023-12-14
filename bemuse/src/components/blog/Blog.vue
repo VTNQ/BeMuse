@@ -180,7 +180,7 @@
     </div>
     
 </div>
-<div class="flex justify-between px-[20%] mt-20 mb-8 last-footer">
+<div class="flex h-min-[30%] justify-between px-[20%] mt-20 mb-8 last-footer">
         <h1 class="text-white font-light text-[1rem]" style="font-family: 'Roboto Mono';letter-spacing:.36px">Support Privacy</h1>
         <h1 class="text-white font-light text-[1rem]" style="font-family: 'Roboto Mono';letter-spacing:.36px">Cookie Policy</h1>
         <h1 class="text-white font-light text-[1rem]" style="font-family: 'Roboto Mono';letter-spacing:.36px">Manage Cookies</h1>

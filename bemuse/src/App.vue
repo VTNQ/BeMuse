@@ -7,19 +7,19 @@ import collection from './components/collection/collection.vue'
 import gallery from './components/gallery/gallery.vue'
 import Exhibitions from './components/exhibitions/exhibitions.vue'
 import Event from './components/event/event.vue'
-
 import contact from './components/ContactUs/contact.vue'
+import aboutUs from './components/aboutUs/aboutUs.vue'
 </script>
 
 <template>
   <div
    :style="{
-      display: $route.path.startsWith('/event') ? 'block' : '',
-      height: $route.path.startsWith('/event') ? '100%' : '',
-      width: $route.path.startsWith('/event') ? '100vw' : '',
+      display: $route.path.startsWith('/aboutUs') ? 'block' : '',
+      height: $route.path.startsWith('/aboutUs') ? '100%' : '',
+      width: $route.path.startsWith('/aboutUs') ? '100vw' : '',
       
     }"
-    :class="{ flex: $route.path.startsWith('/event') }
+    :class="{ flex: $route.path.startsWith('/aboutUs') }
     "
   >
 
@@ -38,6 +38,7 @@ import contact from './components/ContactUs/contact.vue'
   <Exhibitions v-if="$route.path.startsWith('/exhibitions')"/>
   <Event v-if="$route.path.startsWith('/event')"/>
   <contact v-if="$route.path.startsWith('/contact')"/>
+  <aboutUs v-if="$route.path.startsWith('/aboutUs')"/>
   </div>
 </template>
 
