@@ -1,7 +1,7 @@
 <script>
 import { ref, onMounted, computed } from "vue";
 import child from "/src/components/secondary_navbar.vue";
-
+import '../ContactUs/style.css';
 export default {
   components: {
     child,
@@ -293,6 +293,124 @@ export default {
     </div>
     </div>
     <div class="w-[50%] relative flex min-h-[1px]"></div>
+   <div class="w-[50%] relative flex">
+    <div class="w-[100%] relative flex">
+      <div class="flex relative w-[100%] flex-wrap items-start">
+        <div class="w-[100%] relative">
+          <div style="margin: 0px 0px 0px 28px;">
+            <div class="bg-white">
+              <div style="max-width: 487px;
+    margin: 0 auto;
+">
+<div class="w-[100%] relative flex">
+<div class="flex relative w-[100%] flex-wrap items-start">
+<div class="w-[100%] relative">
+  <div style="margin:0px 0px 0px 28px">
+    <div class="bg-white">
+      <div style="max-width: 487px;
+    margin: 0 auto;">
+    <div>
+      <div>
+        <div></div>
+        <form action="">
+        
+          <h2 class="text-center text-black" style="font-size:32px;font-family: 'Crimson Text';
+    font-weight: 500;letter-spacing: 0.64px;">Send us a Message</h2>
+    <div class="flex mt-[17px]">
+      <div class="mr-[15px]">
+        <span class="text-black flex flex-col" style="">
+          <input type="text" name="your-name" placeholder="Your name*" class="text-[14px] w-[100%]" style="padding: 17px 27px;letter-spacing: .28px;
+    font-weight: 300;color:black;max-width: 100%;box-shadow: none;
+    border: 1px solid rgba(0,0,0,.7);
+    border-radius: 0;
+    background: 0 0;font-family: 'Crimson Text';outline:none">
+        </span>
+        <span class="text-black flex flex-col" style="margin-top: 15px;">
+          <input type="text" name="your-name" placeholder="Email*" class="text-[14px] w-[100%]" style="padding: 17px 27px;letter-spacing: .28px;
+    font-weight: 300;color:black;max-width: 100%;box-shadow: none;
+    border: 1px solid rgba(0,0,0,.7);
+    border-radius: 0;
+    background: 0 0;font-family: 'Crimson Text';outline:none">
+        </span>
+        <span class="text-black flex flex-col" style="margin-top: 15px;">
+          <input type="text" name="your-name" placeholder="Website*" class="text-[14px] w-[100%]" style="padding: 17px 27px;letter-spacing: .28px;
+    font-weight: 300;color:black;max-width: 100%;box-shadow: none;
+    border: 1px solid rgba(0,0,0,.7);
+    border-radius: 0;
+    background: 0 0;font-family: 'Crimson Text';outline:none">
+        </span>
+        <span class="text-black flex flex-col" style="margin-top: 15px;">
+          <input type="text" name="your-name" placeholder="Topic*" class="text-[14px] w-[100%]" style="padding: 17px 16px;
+    letter-spacing: .28px;
+    font-weight: 300;
+    color: black;
+    width: 208%;
+    /* max-width: 100%; */
+    box-shadow: none;
+    border: 1px solid rgba(0,0,0,.7);
+    border-radius: 0;
+    background: 0 0;
+    font-family: 'Crimson Text';
+    outline: none;">
+        </span>
+        <span class="text-black flex flex-col" style="margin-top: 15px;">
+          <input type="text" name="your-name" placeholder="Your message" class="text-[14px] w-[100%]" style="padding: 18px;height: 149px;
+    letter-spacing: .28px;
+    font-weight: 300;
+    color: black;
+    width: 208%;
+    /* max-width: 100%; */
+    box-shadow: none;
+    border: 1px solid rgba(0,0,0,.7);
+    border-radius: 0;
+    background: 0 0;
+    font-family: 'Crimson Text';
+    outline: none;">
+        </span>
+      </div>
+      <div>
+            <span class="text-black flex flex-col" >
+          <input type="text" name="your-name" placeholder="Website*" class="text-[14px] w-[100%] " style="padding: 17px 27px;letter-spacing: .28px;
+    font-weight: 300;color:black;max-width: 100%;box-shadow: none;
+    border: 1px solid rgba(0,0,0,.7);
+    border-radius: 0;
+    background: 0 0;font-family: 'Crimson Text';outline:none;color:black">
+        </span>
+            <span class="text-black flex flex-col mt-[15px]" >
+          <input type="number" name="your-name" placeholder="Number*" class="text-[14px] w-[100%] " style="padding: 17px 27px;letter-spacing: .28px;
+    font-weight: 300;color:black;max-width: 100%;box-shadow: none;
+    border: 1px solid rgba(0,0,0,.7);
+    border-radius: 0;
+    background: 0 0;font-family: 'Crimson Text';outline:none;color:black">
+        </span>
+            <span class="text-black flex flex-col mt-[15px]" >
+          <input type="number" name="your-name" placeholder="Inquiry Department*" class="text-[14px] w-[100%] " style="padding: 17px 27px;letter-spacing: .28px;
+    font-weight: 300;color:black;max-width: 100%;box-shadow: none;
+    border: 1px solid rgba(0,0,0,.7);
+    border-radius: 0;
+    background: 0 0;font-family: 'Crimson Text';outline:none;color:black">
+        </span>
+      </div>
+    </div>
+        </form>
+        <div class="mt-[15px] flex items-center justify-between">
+          <input type="submit" value="Submit" class="text-[16px]  custom-btn" >
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
   </div>
 </div>
 </section>
@@ -408,6 +526,18 @@ export default {
     <i class="fa-brands fa-facebook" style="color:black;margin-right:15px"></i>
     Likedink
     </a>
+    <a href="" style="margin: 0 10px;
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: middle;
+    margin-right: 60px;
+    line-height: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;letter-spacing: 0.32px;color:black;font-family:'Roboto Mono';font-weight: 300;">
+    <i class="fa-brands fa-facebook" style="color:black;margin-right:15px"></i>
+    Likedink
+    </a>
     </div>
                 </div>
               </div>
@@ -416,6 +546,7 @@ export default {
         </div>
       </div>
     </div>
+  
   </div>
 </section>
     </div>
