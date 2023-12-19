@@ -58,11 +58,12 @@
       </div>
     </div>
     <child/>
-    <div class="text-center min-h-[150px] py-[130px] px-[15px]" style="background-color:#ebebeb">
-      <div class="text-center min-h-[150px] " style="background-color:#ebebeb">
-        <h1 class=" text-white font-bold" style="font-size:60px;font-family: 'Crimson Text'">Blog</h1>
-      </div>
-    </div>
+    <div class="w-full -z-10 h-screen relative">
+      
+      <img src="/src/views/img/blog1.avif" alt="" class="absolute w-full h-[700px] object-cover">
+      <h6 style="font-family: 'Roboto Mono'; letter-spacing: 0.36px" class="textTitle text-white absolute top-[300px]  text-[3rem] font-bold left-[47%]">Blogs</h6>
+    
+  </div>
     <div style="padding:100px 0 70px">
       <div class="w-[100%] max-w-[1200px] px-[15px] mx-auto respon" >
         <div class="flex flex-wrap mx-[-15px]">
@@ -102,8 +103,8 @@
     font-style: normal;white-space: normal; word-wrap: break-word;">{{item.content}}</p>
 </div>
 <div class="text-white flex items-center font-bold" style="font-size:13px;font-family: 'Roboto Mono'">
-<img :src="item.author" class="my-[10px] mr-[15px]" style="border-radius: 50%;" alt="">
-{{item.authorcontent }}
+<img :src="item.author" class="my-[10px] mr-[15px] h-[40px]" style="border-radius: 50%;" alt="">
+<h1 class="text-black">{{item.authorcontent }}</h1>
 </div>
     </div>
         </div>
@@ -206,7 +207,7 @@ export default {
     const currentPage=ref(1);
     const items = ref([
       {
-        src: "/src/views/img/img-15-1-1.jpg",
+        src: "/src/views/img/blog1a1.png",
         item: "Realism And Impressionism",
         content:
           "Edgar Degas, in full Hilaire-Germain-Edgar De Gas, De Gas later spelled Degas, (born July 19, 1834, Paris, France—died September 27, 1917, Paris), French painter, sculptor, and printmaker who",
@@ -313,141 +314,7 @@ export default {
         authorcontent: "by Lola Rossan",
         link: "https://mooseoom.foxthemes.me/realism-and-impressionism/",
       },
-      {
-        src: "/src/views/img/img-9-1-1-764x1024.jpg",
-        item: "Ventriloquist and Crier",
-        content:
-          "Astrological Fantasy Portrait is a gouache painting created by Paul Klee in 1924. It lives at the Metropolitan Museum",
-       author: "/src/views/img/member-1-150x150-1-60x60.jpg",
-        authorcontent: "by Lola Rossan",
-        link: "https://mooseoom.foxthemes.me/realism-and-impressionism/",
-      },
-      {
-        src: "/src/views/img/img-9-1-1-764x1024.jpg",
-        item: "Ventriloquist and Crier",
-        content:
-          "Astrological Fantasy Portrait is a gouache painting created by Paul Klee in 1924. It lives at the Metropolitan Museum",
-       author: "/src/views/img/member-1-150x150-1-60x60.jpg",
-        authorcontent: "by Lola Rossan",
-        link: "https://mooseoom.foxthemes.me/realism-and-impressionism/",
-      },
-      {
-        src: "/src/views/img/img-9-1-1-764x1024.jpg",
-        item: "Ventriloquist and Crier",
-        content:
-          "Astrological Fantasy Portrait is a gouache painting created by Paul Klee in 1924. It lives at the Metropolitan Museum",
-       author: "/src/views/img/member-1-150x150-1-60x60.jpg",
-        authorcontent: "by Lola Rossan",
-        link: "https://mooseoom.foxthemes.me/realism-and-impressionism/",
-      },
-      {
-        src: "/src/views/img/img-9-1-1-764x1024.jpg",
-        item: "Ventriloquist and Crier",
-        content:
-          "Astrological Fantasy Portrait is a gouache painting created by Paul Klee in 1924. It lives at the Metropolitan Museum",
-       author: "/src/views/img/member-1-150x150-1-60x60.jpg",
-        authorcontent: "by Lola Rossan",
-        link: "https://mooseoom.foxthemes.me/realism-and-impressionism/",
-      },
-      {
-        src: "/src/views/img/img-9-1-1-764x1024.jpg",
-        item: "Ventriloquist and Crier",
-        content:
-          "Astrological Fantasy Portrait is a gouache painting created by Paul Klee in 1924. It lives at the Metropolitan Museum",
-       author: "/src/views/img/member-1-150x150-1-60x60.jpg",
-        authorcontent: "by Lola Rossan",
-        link: "https://mooseoom.foxthemes.me/realism-and-impressionism/",
-      },
-      {
-        src: "/src/views/img/img-9-1-1-764x1024.jpg",
-        item: "Ventriloquist and Crier",
-        content:
-          "Astrological Fantasy Portrait is a gouache painting created by Paul Klee in 1924. It lives at the Metropolitan Museum",
-       author: "/src/views/img/member-1-150x150-1-60x60.jpg",
-        authorcontent: "by Lola Rossan",
-        link: "https://mooseoom.foxthemes.me/realism-and-impressionism/",
-      },
-      {
-        src: "/src/views/img/img-9-1-1-764x1024.jpg",
-        item: "Ventriloquist and Crier",
-        content:
-          "Astrological Fantasy Portrait is a gouache painting created by Paul Klee in 1924. It lives at the Metropolitan Museum",
-       author: "/src/views/img/member-1-150x150-1-60x60.jpg",
-        authorcontent: "by Lola Rossan",
-        link: "https://mooseoom.foxthemes.me/realism-and-impressionism/",
-      },
-      {
-        src: "/src/views/img/img-9-1-1-764x1024.jpg",
-        item: "Ventriloquist and Crier",
-        content:
-          "Astrological Fantasy Portrait is a gouache painting created by Paul Klee in 1924. It lives at the Metropolitan Museum",
-       author: "/src/views/img/member-1-150x150-1-60x60.jpg",
-        authorcontent: "by Lola Rossan",
-        link: "https://mooseoom.foxthemes.me/realism-and-impressionism/",
-      },
-      {
-        src: "/src/views/img/img-9-1-1-764x1024.jpg",
-        item: "Ventriloquist and Crier",
-        content:
-          "Astrological Fantasy Portrait is a gouache painting created by Paul Klee in 1924. It lives at the Metropolitan Museum",
-       author: "/src/views/img/member-1-150x150-1-60x60.jpg",
-        authorcontent: "by Lola Rossan",
-        link: "https://mooseoom.foxthemes.me/realism-and-impressionism/",
-      },
-      {
-        src: "/src/views/img/img-9-1-1-764x1024.jpg",
-        item: "Ventriloquist and Crier",
-        content:
-          "Astrological Fantasy Portrait is a gouache painting created by Paul Klee in 1924. It lives at the Metropolitan Museum",
-       author: "/src/views/img/member-1-150x150-1-60x60.jpg",
-        authorcontent: "by Lola Rossan",
-        link: "https://mooseoom.foxthemes.me/realism-and-impressionism/",
-      },
-      {
-        src: "/src/views/img/img-9-1-1-764x1024.jpg",
-        item: "Ventriloquist and Crier",
-        content:
-          "Astrological Fantasy Portrait is a gouache painting created by Paul Klee in 1924. It lives at the Metropolitan Museum",
-       author: "/src/views/img/member-1-150x150-1-60x60.jpg",
-        authorcontent: "by Lola Rossan",
-        link: "https://mooseoom.foxthemes.me/realism-and-impressionism/",
-      },
-      {
-        src: "/src/views/img/img-9-1-1-764x1024.jpg",
-        item: "Ventriloquist and Crier",
-        content:
-          "Astrological Fantasy Portrait is a gouache painting created by Paul Klee in 1924. It lives at the Metropolitan Museum",
-       author: "/src/views/img/member-1-150x150-1-60x60.jpg",
-        authorcontent: "by Lola Rossan",
-        link: "https://mooseoom.foxthemes.me/realism-and-impressionism/",
-      },
-      {
-        src: "/src/views/img/img-9-1-1-764x1024.jpg",
-        item: "Ventriloquist and Crier",
-        content:
-          "Astrological Fantasy Portrait is a gouache painting created by Paul Klee in 1924. It lives at the Metropolitan Museum",
-       author: "/src/views/img/member-1-150x150-1-60x60.jpg",
-        authorcontent: "by Lola Rossan",
-        link: "https://mooseoom.foxthemes.me/realism-and-impressionism/",
-      },
-      {
-        src: "/src/views/img/img-9-1-1-764x1024.jpg",
-        item: "Ventriloquist and Crier",
-        content:
-          "Astrological Fantasy Portrait is a gouache painting created by Paul Klee in 1924. It lives at the Metropolitan Museum",
-       author: "/src/views/img/member-1-150x150-1-60x60.jpg",
-        authorcontent: "by Lola Rossan",
-        link: "https://mooseoom.foxthemes.me/realism-and-impressionism/",
-      },
-      {
-        src: "/src/views/img/img-9-1-1-764x1024.jpg",
-        item: "Ventriloquist and Crier",
-        content:
-          "Astrological Fantasy Portrait is a gouache painting created by Paul Klee in 1924. It lives at the Metropolitan Museum",
-       author: "/src/views/img/member-1-150x150-1-60x60.jpg",
-        authorcontent: "by Lola Rossan",
-        link: "https://mooseoom.foxthemes.me/realism-and-impressionism/",
-      },
+      
       {
         src: "/src/views/img/img-9-1-1-764x1024.jpg",
         item: "Ventriloquist and Crier",
@@ -604,7 +471,10 @@ return height1+"px";
   box-shadow: rgba(0, 0, 0, 0.09) 0px 10px 50px 0px;
     max-width: 53vh;
 }
-
+.textTitle{
+    -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
 .pagination-button {
   padding: 8px 16px;
   margin: 0 5px;

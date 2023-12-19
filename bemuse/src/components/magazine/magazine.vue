@@ -63,114 +63,21 @@
         <secondary-navbar/>
         <div class="w-full -z-10 h-screen relative">
       
-      <img src="/src/views/img/award1.avif" alt="" class="absolute w-full h-[700px] object-cover">
-      <h6 style="font-family: 'Roboto Mono'; letter-spacing: 0.36px" class="textTitle text-white absolute top-[300px]  text-[3rem] font-bold left-[48%]">Awards</h6>
+      <img src="/src/views/img/magazine1.avif" alt="" class="absolute w-full h-[700px] object-cover">
+      <h6 style="font-family: 'Roboto Mono'; letter-spacing: 0.36px" class="textTitle text-white absolute top-[300px]  text-[3rem] font-bold left-[43%]">Magazines</h6>
     
   </div>
-  <div class="px-[9%] w-full h-[180px] mt-[4%] bg-white">
-    <h1 class="text-[1rem] text-black font-normal" style="font-family: 'Roboto Mono'; letter-spacing: 0.36px">About Us</h1>
-    <h1 class="text-[3rem] text-black font-normal" style="font-family: 'Hedvig Letters Serif'; letter-spacing: 0.36px">Chosen By The Best Judges In The World</h1>
-    <p class="text-[1rem] text-black font-light" style="font-family: 'Roboto Mono'; letter-spacing: 0.36px">The MoomM Art Gallery administers several of the world most important art prizes. These are annual, open competitions, offering various levels of prize money.</p>
+  <div class="bg-white w-full min-h-screen px-[10%] grid grid-cols-3 gap-8 mt-[6%]">
+    <div class="bg-white w-full " v-for="art in arts" :key="index">
+        <img :src="art.img" alt="">
+        <h1 class="text-black mt-5" style="font-family:'Hedvig Letters Serif';font-weight: 300;font-style: normal;font-size: 1.8rem">{{ art.title1 }}</h1>
+        <p class="text-black mt-2" style="font-family:'Roboto Mono';font-weight: 300;font-style: normal;font-size: 1rem">{{ art.title2 }}</p>
+
+    </div>
+    
+
   </div>
-  <div class="relative px-[9%]">
-    <iframe class="frame w-[100%] h-[80vh]" src="https://www.youtube.com/embed/PDrjxt2tKIs?si=MkAhHesouYX1xBCa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
-<div class="px-[9%] mt-[8%] flex justify-between">
-    <img class="w-[150px] object-cover" src="/src/views/img/award2.png" alt="">
-    <img class="w-[150px] object-cover" src="/src/views/img/award3.png" alt="">
-    <img class="w-[150px] object-cover" src="/src/views/img/award4.png" alt="">
-    <img class="w-[150px] object-cover" src="/src/views/img/award5.png" alt="">
-    <img class="w-[150px]" src="/src/views/img/award6.png" alt="">
-
-</div>
-
-<div class="award relative mt-[6%] w-full h-[120vh]">
-
-
-    <div class="absolute w-full h-full">
-    <div class="w-full flex justify-center">
-        <h1 class="mt-16 text-[2.5rem] text-black font-bold" style="font-family: 'Hedvig Letters Serif'; letter-spacing: 0.36px">All Our Rewards</h1>
-    </div>
-    <div class="mt-16 grid grid-cols-2 gap-8 px-[8%]">
-        <div class="grid grid-cols-3 gap-4">
-            <div class="col-span-1">
-                <h1 class="text-[1.3rem] text-black font-medium" style="font-family: 'Roboto Mono'; letter-spacing: 0.36px">June 2007</h1>
-                <h1 class="text-[1rem] mt-2 text-black font-light" style="font-family: 'Roboto Mono'; letter-spacing: 0.36px">American  Alliance of Museum</h1>
-            </div>
-            <div class="col-span-2">
-                <h1 class="text-[1.3rem] text-black font-bold" style="font-family: 'Hedvig Letters Serif'; letter-spacing: 0.36px">Museum of the year</h1>
-                <h1 class="text-[1rem] mt-2 text-black font-light" style="font-family: 'Roboto Mono'; letter-spacing: 0.36px">The role that curators play, like the art they care for, is constantly evolving.</h1>
-            </div>
-            <div class="col-span-1 mt-4">
-                <h1 class="text-[1.3rem] text-black font-medium" style="font-family: 'Roboto Mono'; letter-spacing: 0.36px">June 2007</h1>
-                <h1 class="text-[1rem] mt-2 text-black font-light" style="font-family: 'Roboto Mono'; letter-spacing: 0.36px">American  Alliance of Museum</h1>
-            </div>
-            <div class="col-span-2 mt-4">
-                <h1 class="text-[1.3rem] text-black font-bold" style="font-family: 'Hedvig Letters Serif'; letter-spacing: 0.36px">Museum of the year</h1>
-                <h1 class="text-[1rem] mt-2 text-black font-light" style="font-family: 'Roboto Mono'; letter-spacing: 0.36px">The role that curators play, like the art they care for, is constantly evolving.</h1>
-            </div>
-            <div class="col-span-1 mt-4">
-                <h1 class="text-[1.3rem] text-black font-medium" style="font-family: 'Roboto Mono'; letter-spacing: 0.36px">June 2007</h1>
-                <h1 class="text-[1rem] mt-2 text-black font-light" style="font-family: 'Roboto Mono'; letter-spacing: 0.36px">American  Alliance of Museum</h1>
-            </div>
-            <div class="col-span-2 mt-4">
-                <h1 class="text-[1.3rem] text-black font-bold" style="font-family: 'Hedvig Letters Serif'; letter-spacing: 0.36px">Museum of the year</h1>
-                <h1 class="text-[1rem] mt-2 text-black font-light" style="font-family: 'Roboto Mono'; letter-spacing: 0.36px">The role that curators play, like the art they care for, is constantly evolving.</h1>
-            </div>
-            <div class="col-span-1 mt-4">
-                <h1 class="text-[1.3rem] text-black font-medium" style="font-family: 'Roboto Mono'; letter-spacing: 0.36px">June 2007</h1>
-                <h1 class="text-[1rem] mt-2 text-black font-light" style="font-family: 'Roboto Mono'; letter-spacing: 0.36px">American  Alliance of Museum</h1>
-            </div>
-            <div class="col-span-2 mt-4">
-                <h1 class="text-[1.3rem] text-black font-bold" style="font-family: 'Hedvig Letters Serif'; letter-spacing: 0.36px">Museum of the year</h1>
-                <h1 class="text-[1rem] mt-2 text-black font-light" style="font-family: 'Roboto Mono'; letter-spacing: 0.36px">The role that curators play, like the art they care for, is constantly evolving.</h1>
-            </div>
-            
-
-        </div>
-
-        <div class="grid grid-cols-3 gap-4">
-            <div class="col-span-1">
-                <h1 class="text-[1.3rem] text-black font-medium" style="font-family: 'Roboto Mono'; letter-spacing: 0.36px">June 2007</h1>
-                <h1 class="text-[1rem] mt-2 text-black font-light" style="font-family: 'Roboto Mono'; letter-spacing: 0.36px">American  Alliance of Museum</h1>
-            </div>
-            <div class="col-span-2">
-                <h1 class="text-[1.3rem] text-black font-bold" style="font-family: 'Hedvig Letters Serif'; letter-spacing: 0.36px">Museum of the year</h1>
-                <h1 class="text-[1rem] mt-2 text-black font-light" style="font-family: 'Roboto Mono'; letter-spacing: 0.36px">The role that curators play, like the art they care for, is constantly evolving.</h1>
-            </div>
-            <div class="col-span-1 mt-4">
-                <h1 class="text-[1.3rem] text-black font-medium" style="font-family: 'Roboto Mono'; letter-spacing: 0.36px">June 2007</h1>
-                <h1 class="text-[1rem] mt-2 text-black font-light" style="font-family: 'Roboto Mono'; letter-spacing: 0.36px">American  Alliance of Museum</h1>
-            </div>
-            <div class="col-span-2 mt-4">
-                <h1 class="text-[1.3rem] text-black font-bold" style="font-family: 'Hedvig Letters Serif'; letter-spacing: 0.36px">Museum of the year</h1>
-                <h1 class="text-[1rem] mt-2 text-black font-light" style="font-family: 'Roboto Mono'; letter-spacing: 0.36px">The role that curators play, like the art they care for, is constantly evolving.</h1>
-            </div>
-            <div class="col-span-1 mt-4">
-                <h1 class="text-[1.3rem] text-black font-medium" style="font-family: 'Roboto Mono'; letter-spacing: 0.36px">June 2007</h1>
-                <h1 class="text-[1rem] mt-2 text-black font-light" style="font-family: 'Roboto Mono'; letter-spacing: 0.36px">American  Alliance of Museum</h1>
-            </div>
-            <div class="col-span-2 mt-4">
-                <h1 class="text-[1.3rem] text-black font-bold" style="font-family: 'Hedvig Letters Serif'; letter-spacing: 0.36px">Museum of the year</h1>
-                <h1 class="text-[1rem] mt-2 text-black font-light" style="font-family: 'Roboto Mono'; letter-spacing: 0.36px">The role that curators play, like the art they care for, is constantly evolving.</h1>
-            </div>
-            <div class="col-span-1 mt-4">
-                <h1 class="text-[1.3rem] text-black font-medium" style="font-family: 'Roboto Mono'; letter-spacing: 0.36px">June 2007</h1>
-                <h1 class="text-[1rem] mt-2 text-black font-light" style="font-family: 'Roboto Mono'; letter-spacing: 0.36px">American  Alliance of Museum</h1>
-            </div>
-            <div class="col-span-2 mt-4">
-                <h1 class="text-[1.3rem] text-black font-bold" style="font-family: 'Hedvig Letters Serif'; letter-spacing: 0.36px">Museum of the year</h1>
-                <h1 class="text-[1rem] mt-2 text-black font-light" style="font-family: 'Roboto Mono'; letter-spacing: 0.36px">The role that curators play, like the art they care for, is constantly evolving.</h1>
-            </div>
-            
-
-        </div>
-
-    </div>
-
-</div>
-</div>
-<div class="w-full h-[30%] relative px-24 mt-[8%]  ">
+  <div class="w-full h-[30%] relative px-24 mt-[8%]  ">
           <img class=" w-full h-[280px] object-cover" src="/src/views/img/award_banner.jpg" alt="">
           <div class="absolute flex justify-between w-[100%] top-[50%] items-center px-[15%]">
             <p class="text-white mt-2" style="font-family:'Hedvig Letters Serif';font-weight: 400;font-style: normal;font-size: 2.5rem">Subcribe To Our Newsletter Now</p>
@@ -310,31 +217,80 @@
       </div>
 
 </div>
-
     </div>
 </template>
 <style scoped>
-.main-container{
-    scroll-behavior: auto;
-    height: 100vh;
-}
 .textTitle{
     -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
 }
-.award{
-    background-image: url('/src/views/img/award_stone1.jpg');
+.main-container{
+    scroll-behavior: auto;
+    height: 100vh;
 }
 </style>
 <script>
 import secondary_navbar from '/src/components/secondary_navbar.vue';
 
-export default{
+export default {
+
+    data(){
+        return{
+            arts: [
+                {
+                    img: '/src/views/img/magazine2.png',
+                    title1: "Minizzmo",
+                    title2: "The magazine for artists by artists from around the world. They tell you the thought processes behind their creative methods and reveal their painting techniques."
+                },
+                {
+                    img: '/src/views/img/magazine3.png',
+                    title1: "ARTZ",
+                    title2: "A monthly magazine specially written for collectors, galleries and painters of traditional fine art. Articles emphasize mainstream art by today's favorite artists."
+                },
+                {
+                    img: '/src/views/img/magazine4.png',
+                    title1: "Artmonkey",
+                    title2: "This magazine is the journal of record for the visual arts world. See what galleries are showing nationwide each month. Find new artists to collect in a specific art destination."
+                },
+                {
+                    img: '/src/views/img/magazine5.png',
+                    title1: "Beyond",
+                    title2: "This is an independent art publications. Immediately attractive to the viewing public at large and have proved this with the interest generated by the social media. "
+                },
+                {
+                    img: '/src/views/img/magazine6.png',
+                    title1: "Artmazing",
+                    title2: "This is an independent art publications. Immediately attractive to the viewing public at large and have proved this with the interest generated by the social media. "
+                },
+                {
+                    img: '/src/views/img/magazine7.png',
+                    title1: "FineART",
+                    title2: "The magazine goes out to art buyers and galleries and the magazine will be free for everyone, even those who are not interested in art!"
+                },
+                {
+                    img: '/src/views/img/magazine8.png',
+                    title1: "Conversation",
+                    title2: "Below are some of the finest art magazines from around the world. Subscribing to several art magazines will really help you learn about the latest art trends."
+                },
+                {
+                    img: '/src/views/img/magazine9.png',
+                    title1: "Lookin",
+                    title2: "This is based printed art magazine, published six times a year.You also get a lot of pleasure and education from your magazine subscriptions."
+                },
+                {
+                    img: '/src/views/img/magazine10.png',
+                    title1: "Madelynn",
+                    title2: "Published and available in both digital and print form, our magazines tell the story of art. We invite readers to explore our back issues."
+                },
+            ],
+            artSlide : 0
+        }
+    },
 
 
     components: {
     "secondary-navbar": secondary_navbar,
-  },
+}, 
 }
 
 

@@ -58,7 +58,7 @@
       </div>
     </div>
     <secondary-navbar/>
-    <div class="w-full h-screen relative">
+    <div class="w-full -z-10 h-screen relative">
       
       <img src="/src/views/img/aboutUs1.jpg" alt="" class="absolute w-full h-[700px] object-cover">
       <h6 style="font-family: 'Roboto Mono'; letter-spacing: 0.36px" class="textTitle text-black absolute top-[300px] text-[2.5rem] font-bold left-[45%]">About Us</h6>

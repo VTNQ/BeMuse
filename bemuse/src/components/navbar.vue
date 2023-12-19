@@ -18,7 +18,7 @@
     <div class="top-auto pb-0 h-auto">
       <nav class="h-[92px]">
         <ul
-          class="transform -translate-y-[-22] relative top-[50%] overflow-y-auto"
+          class="transform -translate-y-[-22] relative top-[20%] overflow-y-auto"
         >
           <div class="relative overflow-hidden h-[100%] max-w-[91%]">
             <div
@@ -165,9 +165,22 @@
                   style="letter-spacing: 0.32px"
                   ><router-link class="text-white font-bold text-[19px]"
                   id="text"
+                  style="letter-spacing: 0.32px" to="/blog">Blog</router-link></a
+                >
+              </li>
+              <li class="relative py-[4px] px-0 mt-3 reponsive-menu">
+                <a
+                  href=""
+                  class="text-white font-bold text-[19px]"
+                  id="text"
+                  style="letter-spacing: 0.32px"
+                  ><router-link class="text-white font-bold text-[19px]"
+                  id="text"
                   style="letter-spacing: 0.32px" to="/contact">Contact Us</router-link></a
                 >
               </li>
+              
+              
               <div>
                 <div>
                   <span
@@ -425,25 +438,8 @@ export default {
   right: 44px;
   top: 80px;
 }
-.dropdown-btn::before {
-  position: absolute;
-  content: "";
-  right: -13px;
-  top: 4px;
-  height: 2px;
-  width: 100%;
-  background-color: white;
-  z-index: 2000;
-}
-.dropdown-btn::after {
-  opacity: 1;
-  position: absolute;
-  content: "";
-  height: 100%;
-  width: 2px;
-  background-color: #fff;
-  right: -9px;
-}
+
+
 
 .dropdown-btn1 {
   cursor: pointer;

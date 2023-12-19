@@ -11,17 +11,21 @@ import contact from './components/ContactUs/contact.vue'
 import aboutUs from './components/aboutUs/aboutUs.vue'
 import leaderShip from './components/leaderShip/leaderShip.vue'
 import award from './components/award/award.vue'
+import magazine from './components/magazine/magazine.vue'
+import mission from './components/mission/mission.vue'
+import location from './components/location/location.vue'
+import membership from './components/membership/membership.vue'
 </script>
 
 <template>
   <div
    :style="{
-      display: $route.path.startsWith('/award') ? 'block' : '',
-      height: $route.path.startsWith('/award') ? '100%' : '',
-      width: $route.path.startsWith('/award') ? '100vw' : '',
+      display: $route.path.startsWith('/membership') ? 'block' : '',
+      height: $route.path.startsWith('/membership') ? '100%' : '',
+      width: $route.path.startsWith('/membership') ? '100vw' : '',
       
     }"
-    :class="{ flex: $route.path.startsWith('/award') }
+    :class="{ flex: $route.path.startsWith('/membership') }
     "
   >
 
@@ -43,6 +47,10 @@ import award from './components/award/award.vue'
   <aboutUs v-if="$route.path.startsWith('/aboutUs')"/>
   <leaderShip v-if="$route.path.startsWith('/leaderShip')" />
   <award v-if="$route.path.startsWith('/award')"/>
+  <magazine v-if="$route.path.startsWith('/magazine')"/>
+  <mission v-if="$route.path.startsWith('/mission')"/>
+  <location v-if="$route.path.startsWith('/location')"/>
+  <membership v-if="$route.path.startsWith('/membership')" />
   </div>
 </template>
 

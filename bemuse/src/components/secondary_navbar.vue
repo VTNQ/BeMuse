@@ -19,7 +19,7 @@
             </button>
           </div>
           <div class="master">
-<div class="h-auto pb-0 main-header__menu-box">
+<div class="h-auto pb-0 main-header__menu-box pr-16">
             <nav>
               <ul class="flex flex-row justify-around mb-0 relative flex-repon">
                 <li
@@ -27,7 +27,7 @@
                   style="white-space: nowrap"
                 >
                   <a
-                    href="#"
+                    href=""
                     class="text-[16px] font-bold"
                     style="
                       letter-spacing: 0.32px;
@@ -45,7 +45,7 @@
                   style="white-space: nowrap"
                 >
                   <a
-                    href="#"
+                    
                     class="text-[16px] font-bold"
                     style="
                       letter-spacing: 0.32px;
@@ -53,15 +53,14 @@
                       color: black;
                       white-space: nowrap;
                     "
-                    >Museum</a
-                  >
+                    >Museum</a>
                    <span
-                            class="inline-block pl-[10px] text-[57.2%] whitespace-normal pb-2 dropdown-btn nth"
+                            class="inline-block  pl-[10px] text-[57.2%] whitespace-normal pb-2 dropdown-btn nth"
                             style="vertical-align: middle"
                           ></span>
                   <div class="mega-menu">
                     <div class="mega-menu__col">
-                      <div class="mega-menu__title">Column One</div>
+                      <div class="mega-menu__title ">Column One</div>
                       <ul class="mega-menu__list">
                         <li
                           class="min-w-[1px] px-[3px] py-0 flex justify-between items-center cursor-auto sub-menu"
@@ -74,7 +73,7 @@
                               font-size: 0.92859rem;
                               font-family: Roboto Mono;
                             "
-                            ><router-link class="text-black font-bold text-[16px]"
+                            ><router-link class="text-black font-normal text-[16px]"
                   id="text"
                   style="letter-spacing: 0.32px" to="/aboutUs">About Us</router-link></a
                           >
@@ -89,7 +88,9 @@
                               font-size: 0.92859rem;
                               font-family: Roboto Mono;
                             "
-                            >Mission and History</a
+                            ><router-link class="text-black font-normal text-[16px]"
+                  id="text"
+                  style="letter-spacing: 0.32px" to="/mission">Mission and History</router-link></a
                           >
                         </li>
                         <li
@@ -102,7 +103,9 @@
                               font-size: 0.92859rem;
                               font-family: Roboto Mono;
                             "
-                            >Leadership</a
+                            ><router-link class="text-black font-normal text-[16px]"
+                  id="text"
+                  style="letter-spacing: 0.32px" to="/leaderShip">Leadership</router-link></a
                           >
                         </li>
                         <li
@@ -115,7 +118,9 @@
                               font-size: 0.92859rem;
                               font-family: Roboto Mono;
                             "
-                            >Location</a
+                            ><router-link class="text-black font-normal text-[16px]"
+                  id="text"
+                  style="letter-spacing: 0.32px" to="/location">Location</router-link></a
                           >
                         </li>
                         <li
@@ -128,7 +133,9 @@
                               font-size: 0.92859rem;
                               font-family: Roboto Mono;
                             "
-                            >Awards</a
+                            ><router-link class="text-black font-normal text-[16px]"
+                  id="text"
+                  style="letter-spacing: 0.32px" to="/award">Awards</router-link></a
                           >
                         </li>
                       </ul>
@@ -146,7 +153,9 @@
                               font-size: 0.92859rem;
                               font-family: Roboto Mono;
                             "
-                            >Magazine</a
+                            ><router-link class="text-black font-normal text-[16px]"
+                  id="text"
+                  style="letter-spacing: 0.32px" to="/magazine">Magazine</router-link></a
                           >
                         </li>
                         <li
@@ -159,7 +168,9 @@
                               font-size: 0.92859rem;
                               font-family: Roboto Mono;
                             "
-                            >Membership</a
+                            ><router-link class="text-black font-normal text-[16px]"
+                  id="text"
+                  style="letter-spacing: 0.32px" to="/membership">Membership</router-link></a
                           >
                         </li>
                         <li
@@ -572,7 +583,9 @@
                       font-family: Roboto Mono;
                       color: black;
                     "
-                    >Exhibitions</a
+                    ><router-link class="text-black font-bold text-[16px]"
+                  id="text"
+                  style="letter-spacing: 0.32px" to="/exhibitions">Exhibition</router-link></a
                   >
                 </li>
                 <li
@@ -641,7 +654,9 @@
                       color: black;
                       white-space: nowrap;
                     "
-                    >Blog</a
+                    ><router-link class="text-black font-bold text-[16px]"
+                  id="text"
+                  style="letter-spacing: 0.32px" to="/blog">Blogs</router-link></a
                   >
                 </li>
                 <li
@@ -649,7 +664,7 @@
                   style="white-space: nowrap"
                 >
                   <a
-                    href="https://mooseoom.foxthemes.me/"
+                    
                     class="text-[16px] font-bold"
                     style="
                       letter-spacing: 0.32px;
@@ -657,7 +672,9 @@
                       color: black;
                       white-space: nowrap;
                     "
-                    >Contact Us</a
+                    ><router-link class="text-black font-bold text-[16px]"
+                  id="text"
+                  style="letter-spacing: 0.32px" to="/contactUs">Contact Us</router-link></a
                   >
                 </li>
               </ul>
@@ -770,6 +787,7 @@ export default{
   -webkit-box-flex: 1;
   -ms-flex: 1 1 0px;
   flex: 1 1 0;
+  z-index: 1000;
 }
 .menu1::before {
   content: "";
@@ -815,8 +833,6 @@ export default{
   position: absolute;
   left: 30%;
   top: 100%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   background: #fff;
   padding: 18px 0;
@@ -824,16 +840,13 @@ export default{
   max-width: 100vw;
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: all 0.2s;
-  -o-transition: all 0.2s;
   transition: all 0.2s;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  z-index: 1;
+  z-index: 1000; /* High z-index */
   height: 0;
   overflow: hidden;
 }
+
 .sub-menu2::before{
         content: "";
     display: inline-block;
@@ -871,6 +884,7 @@ export default{
 }
 .sub-menu:hover .dropdown-btn::before {
   content: "\f209";
+  
 }
 .sub-menu:hover .sub-menu1{
    opacity: 1;
@@ -973,6 +987,7 @@ export default{
   font-size: 115%;
   vertical-align: middle;
   font-weight: 700;
+  z-index: 1000;
 }
 .mega-menu__title {
   font-weight: 700;

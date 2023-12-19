@@ -61,13 +61,13 @@
     
         </div>
         <secondary-navbar/>
-        <div class="w-full h-screen relative">
+        <div class="w-full -z-10 h-screen relative">
       
       <img src="/src/views/img/leaderShip2.avif" alt="" class="absolute w-full h-[700px] object-cover">
       <h6 style="font-family: 'Roboto Mono'; letter-spacing: 0.36px" class="textTitle text-white absolute top-[300px] text-[2.5rem] font-bold left-[45%]">Leader Ship</h6>
     
   </div>
-  <div class="bg-white w-full  relative px-[12%] grid grid-cols-4 gap-5">
+  <div class="bg-white w-full mt-[8%]  relative px-[12%] grid grid-cols-4 gap-5">
             <div class="w-full h-[400px] relative " v-for="human in humans" :key="index">
                 <img class="w-full h-[300px] object-cover" :src="human.img" alt="">
                 <div class="mt-6 absolute w-full flex flex-col  justify-center">

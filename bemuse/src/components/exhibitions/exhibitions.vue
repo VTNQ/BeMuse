@@ -60,7 +60,7 @@
       </div>
     </div>
     <secondary-navbar/>
-    <div class="w-full h-screen relative">
+    <div class="w-full h-screen -z-10 relative">
       
         <img src="/src/assets/images/ex1.jpg" alt="" class="absolute w-full h-[700px] object-cover">
         <h6 class="textTitle text-white absolute top-[300px] text-[2.5rem] font-bold left-[45%]">Exhibitions</h6>
