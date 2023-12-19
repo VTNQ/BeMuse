@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.custom-btn {
+    
+    padding: 17px 52px;
+    width: 100%;
+    display: block;
+    text-align: center;
+    background-color: rgba(0,0,0,1);
+    border-radius: 0;
+    color: white;
+  }
+  .custom-btn:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+  }
